@@ -2,9 +2,10 @@
   "name": "fest.dev-website",
   "version": "1.0.0",
   "description": "website fest.dev",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,6 @@
   },
   "homepage": "https://github.com/fest-dev/fest.dev#readme",
   "devDependencies": {
-    "rollup": "^3.5.1"
+    "parcel": "^2.8.0"
   }
 }
