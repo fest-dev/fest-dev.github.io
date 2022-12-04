@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Five Years Later";
+    src: url(./assets/fonts/five-years-later-regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-Regular.ttf) format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000E17;
+    min-height: 100vh;
+    font-family: Five Years Later;
+}
+
+.title {
+    width: 100%;
+    font-size: 3.375rem;
+    color: #10BEC9;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title--inverted {
+    color: #000E17;
+}
+
+.header {
+    min-height: calc(100vh - 78px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding: 0 56px;
+}
+
+.header__hero {
+    width: 100%;
+}
+
+.header__text {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.nav {
+    font-family: Roboto;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+}
+
+.nav__logo {
+    width: 40px;
+}
+
+.nav__button {
+    background: transparent;
+    border: none;
+}
+
+.nav__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    background: #000E17;
+    gap: 70px;
+    padding: 15vh 0 0 0;
+    margin: 0;
+}
+
+.nav__item {
+    color: #fff;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    padding: 4px;
+    border-bottom: 1px solid #10BEC9;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__description {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 160px auto;
+}
+
+.main__info {
+    background-color: #10BEC9;
+    padding: 20px 52px;
+    margin: 0;
+    color: #000E17;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main__info a {
+    color: currentColor;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 80px 40px 0 40px;
+}
+
+.section--inverted {
+    background: #fff;
+}
+
+.section__column {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    --card-main-color: #fff;
+    --card-description-color: #B2B8BC;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    color: var(--card-main-color);
+}
+
+.card--inverted {
+    --card-main-color: #000E17;
+    --card-description-color: #373C40;
+}
+
+.card__illustration {
+    width: 200px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card__title {
+    margin: 0 0 4px 0;
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.card__description {
+    font-family: Roboto;
+    margin: 0 0 20px 0;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--card-description-color);
+    text-align: left;
+}
+
+.card__links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card__hashtag {
+    color: currentColor;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.partners-section {
+    padding: 80px 40px 40px 40px;
+}
+
+.footer {
+    padding: 40px;
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+.footer__copyright {
+    font-size: 1rem;
+    color: #000E17;
+    margin: 0;
+}
+
+@media all and (min-width: 860px) {
+    .header__text {
+        font-size: 2.125rem;
+    }
+
+    .nav__button {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        position: unset;
+        padding: 0;
+    }
+
+    .nav__item {
+        font-size: 1.125rem;
+    }
+
+    .section {
+        padding: 80px 120px 0 120px;
+    }
+
+    .section__column {
+        justify-content: flex-start;
+    }
+
+    .main__info {
+        font-size: 2.125rem;
+    }
+
+    .main__description {
+        font-size: 2.125rem;
+        max-width: 1154px;
+    }
+
+    .partners-section {
+        padding: 80px 120px 40px 120px;
+    }
+}
