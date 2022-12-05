@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="./normalize.css" type="text/css">
+    <link rel="stylesheet" href="./flexboxgrid.css" type="text/css">
     <title>DevFest</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest">
         <p class="header__text">Not your regular Dev conference.</p>
     </header>
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo">
-        <button class="nav__button">
+        <button class="nav__button" id="mobile-nav-button">
             <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 2H48" stroke="#10BEC9" stroke-width="3"/>
                 <path d="M0 20H48" stroke="#10BEC9" stroke-width="3"/>
-            </svg>
+            </svg>             
         </button>
-        <ul class="nav__list">
-            <li class="nav__item">Learn More</li>
-            <li class="nav__item">Speakers</li>
-            <li class="nav__item">Who's behind it?</li>
-            <li class="nav__item">Who's behind it?</li>
+        <ul class="nav__list" id="nav-list">
+            <li class="nav__item"><a href="#">Learn More</a></li>
+            <li class="nav__item"><a href="#speakers">Speakers</a></li>
+            <li class="nav__item"><a href="#organizers">Who's behind it?</a></li>
+            <li class="nav__item"><a href="#partners">Partners</a></li>
+            <button class="nav__close-button" aria-label="Close menu" id="close-button">
+                <img src="./assets/images/close-icon.svg" alt="" />
+            </button>
         </ul>
     </nav>
 
-    <main class="main">
+    <main class="main" id="main">
         <p class="main__description">Put the emphasis in Fest. Spend good times for good reasons. We'll discuss product development from end to end and back again. From concepts to design, to the more technical backend & frontend.</p>
-
+        
         <p class="main__info">Happening early next year, in Porto. <a href="#">Stay Tuned</a></p>
 
-        <section class="section">
+        <section class="section" id="speakers">
             <h2 class="title">Speakers</h2>
 
             <div class="row center-xs start-lg">
@@ -45,7 +50,7 @@
                         <div class="card__content">
                             <p class="card__title">Artem Zakharchenko</p>
                             <p class="card__description">Microservices from A to Z</p>
-
+        
                             <div class="card__links-wrapper">
                                 <a href="#" class="card__hashtag">#Frontend</a>
                                 <a href="#" class="card__hashtag">#Anothertag</a>
@@ -56,11 +61,11 @@
                 <div class="col-xs-12 col-lg-6 section__column">
                     <div class="card">
                         <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
+        
                         <div class="card__content">
                             <p class="card__title">Artem Zakharchenko</p>
                             <p class="card__description">Microservices from A to Z</p>
-
+        
                             <div class="card__links-wrapper">
                                 <a href="#" class="card__hashtag">#Frontend</a>
                                 <a href="#" class="card__hashtag">#Anothertag</a>
@@ -71,11 +76,11 @@
                 <div class="col-xs-12 col-lg-6 section__column">
                     <div class="card">
                         <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
+        
                         <div class="card__content">
                             <p class="card__title">Artem Zakharchenko</p>
                             <p class="card__description">Microservices from A to Z</p>
-
+        
                             <div class="card__links-wrapper">
                                 <a href="#" class="card__hashtag">#Frontend</a>
                                 <a href="#" class="card__hashtag">#Anothertag</a>
@@ -86,11 +91,11 @@
                 <div class="col-xs-12 col-lg-6 section__column">
                     <div class="card">
                         <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
+        
                         <div class="card__content">
                             <p class="card__title">Artem Zakharchenko</p>
                             <p class="card__description">Microservices from A to Z</p>
-
+        
                             <div class="card__links-wrapper">
                                 <a href="#" class="card__hashtag">#Frontend</a>
                                 <a href="#" class="card__hashtag">#Anothertag</a>
@@ -101,7 +106,7 @@
             </div>
         </section>
 
-        <section class="section section--inverted">
+        <section class="section section--inverted" id="organizers">
             <h2 class="title title--inverted">Who's behind it?</h2>
 
             <div class="row">
@@ -112,7 +117,7 @@
                         <div class="card__content">
                             <p class="card__title">Artem Zakharchenko</p>
                             <p class="card__description">Microservices from A to Z</p>
-
+        
                             <div class="card__links-wrapper">
                                 <a href="#" class="card__hashtag">#Frontend</a>
                                 <a href="#" class="card__hashtag">#Anothertag</a>
@@ -123,11 +128,11 @@
                 <div class="col-xs-12 col-lg-6 section__column">
                     <div class="card card--inverted">
                         <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
+        
                         <div class="card__content">
                             <p class="card__title">Artem Zakharchenko</p>
                             <p class="card__description">Microservices from A to Z</p>
-
+        
                             <div class="card__links-wrapper">
                                 <a href="#" class="card__hashtag">#Frontend</a>
                                 <a href="#" class="card__hashtag">#Anothertag</a>
@@ -135,20 +140,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <section class="section section--inverted partners-section">
+        <section class="section section--inverted partners-section" id="partners">
             <h2 class="title title--inverted">Meet the Partners</h2>
 
             <img src="./assets/images/debpro-logo.svg" alt="DevPro partner" />
-
+            
             <img src="./assets/images/debpro-logo.svg" alt="DevPro partner" />
-
+            
             <img src="./assets/images/namecheap-logo.svg" alt="Namecheap partner" />
-
+            
             <img src="./assets/images/namecheap-logo.svg" alt="Namecheap partner" />
-
+            
             <img src="./assets/images/namecheap-logo.svg" alt="Namecheap partner" />
         </section>
     </main>
@@ -156,5 +160,8 @@
     <footer class="footer">
         <p class="footer__copyright">© 2023 Devfest. All rights reserved.</p>
     </footer>
+
+    <script src="./stickyNav.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>
