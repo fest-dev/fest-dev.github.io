@@ -1,2 +1,6 @@
 import './main.css';
-console.log('App started');
+import { enableStickyNavigation } from './stickyNav';
+import { enableMobileMenu } from './menu';
+
+enableStickyNavigation();
+enableMobileMenu();
