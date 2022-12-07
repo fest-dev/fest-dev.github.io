@@ -6,3 +6,5 @@ Website repository
 
 ## Build
 ``npm run build``
+
+## Actions
