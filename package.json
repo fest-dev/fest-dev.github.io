@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html"
+    "build": "node ./build/build.mjs"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/fest-dev/fest.dev#readme",
   "devDependencies": {
     "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "contentful": "^9.2.14",
+    "mustache": "^4.2.0"
   }
 }

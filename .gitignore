@@ -2,3 +2,5 @@
 /.idea/
 /dist/
 /.parcel-cache/
+/src/entry.html
+/src/index.html
