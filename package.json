@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/fest-dev/fest.dev#readme",
   "devDependencies": {
+    "contentful": "^9.2.14",
+    "mustache": "^4.2.0",
     "parcel": "^2.8.0"
   },
   "dependencies": {
-    "contentful": "^9.2.14",
-    "mustache": "^4.2.0"
   }
 }
