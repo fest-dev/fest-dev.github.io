@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "metadata": { "tags": [] },
+      "sys": {
+        "space": {},
+        "id": "2bDZaV8eaXvYuU0RT8OKD5",
+        "type": "Entry",
+        "createdAt": "2022-12-10T22:25:09.127Z",
+        "updatedAt": "2022-12-10T22:25:09.127Z",
+        "environment": {},
+        "revision": 1,
+        "contentType": {},
+        "locale": "en-US"
+      },
+      "fields": {
+        "heroText": "NOT YOUR REGULAR DEV CONFERENCE."
+      }
+    }
+  ]
+}
