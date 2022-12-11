@@ -4,7 +4,10 @@ import { csm } from './cms.mjs';
 const FD_CMS_ACCESS_TOKEN = process.env.FD_CMS_ACCESS_TOKEN;
 const FD_CMS_SPACE = process.env.FD_CMS_SPACE;
 
-const entryPoint = await csm(FD_CMS_ACCESS_TOKEN, FD_CMS_SPACE);
+const entryPoint = await csm({
+    accessToken: FD_CMS_ACCESS_TOKEN,
+    space: FD_CMS_SPACE
+});
 
 let bundler = new Parcel({
     entries: entryPoint,
