@@ -10,7 +10,7 @@
 <body>
     <header class="header" id="header">
         <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest">
-        <p class="header__text">{{heroText}}</p>
+        <p class="header__text">{{heroText.heroText}}</p>
     </header>
 
     <nav class="nav" id="nav">
@@ -22,10 +22,9 @@
             </svg>
         </button>
         <ul class="nav__list" id="nav-list">
-            <li class="nav__item"><a href="#">Learn More</a></li>
-            <li class="nav__item"><a href="#speakers">Speakers</a></li>
-            <li class="nav__item"><a href="#organizers">Who's behind it?</a></li>
-            <li class="nav__item"><a href="#partners">Partners</a></li>
+            {{#menu}}
+                <li class="nav__item"><a href="{{link}}">{{title}}</a></li>
+            {{/menu}}
             <button class="nav__close-button" aria-label="Close menu" id="close-button">
                 <img src="./assets/images/close-icon.svg" alt="" />
             </button>
@@ -33,74 +32,32 @@
     </nav>
 
     <main class="main" id="main">
-        <p class="main__description">Put the emphasis in Fest. Spend good times for good reasons. We'll discuss product development from end to end and back again. From concepts to design, to the more technical backend & frontend.</p>
+        <p class="main__description">{{mainTextSection.mainTextSection}}</p>
 
-        <p class="main__info">Happening early next year, in Porto. <a href="#">Stay Tuned</a></p>
+        <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
 
         <section class="section" id="speakers">
             <h2 class="title">Speakers</h2>
 
             <div class="row center-xs start-lg">
-                <div class="col-xs-12 col-lg-6 section__column">
-                    <div class="card">
-                        <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
+                {{#speakers}}
+                    <div class="col-xs-12 col-lg-6 section__column">
+                        <div class="card">
+                            <img class="card__illustration" src="https://{{photo.fields.file.url}}" alt="Speaker" />
 
-                        <div class="card__content">
-                            <p class="card__title">Artem Zakharchenko</p>
-                            <p class="card__description">Microservices from A to Z</p>
+                            <div class="card__content">
+                                <p class="card__title">{{name}}</p>
+                                <p class="card__description">{{theme}}</p>
 
-                            <div class="card__links-wrapper">
-                                <a href="#" class="card__hashtag">#Frontend</a>
-                                <a href="#" class="card__hashtag">#Anothertag</a>
+                                <div class="card__links-wrapper">
+                                    {{#tags}}
+                                        <a href="#" class="card__hashtag">#{{.}}</a>
+                                    {{/tags}}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-lg-6 section__column">
-                    <div class="card">
-                        <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
-                        <div class="card__content">
-                            <p class="card__title">Artem Zakharchenko</p>
-                            <p class="card__description">Microservices from A to Z</p>
-
-                            <div class="card__links-wrapper">
-                                <a href="#" class="card__hashtag">#Frontend</a>
-                                <a href="#" class="card__hashtag">#Anothertag</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6 section__column">
-                    <div class="card">
-                        <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
-                        <div class="card__content">
-                            <p class="card__title">Artem Zakharchenko</p>
-                            <p class="card__description">Microservices from A to Z</p>
-
-                            <div class="card__links-wrapper">
-                                <a href="#" class="card__hashtag">#Frontend</a>
-                                <a href="#" class="card__hashtag">#Anothertag</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6 section__column">
-                    <div class="card">
-                        <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
-                        <div class="card__content">
-                            <p class="card__title">Artem Zakharchenko</p>
-                            <p class="card__description">Microservices from A to Z</p>
-
-                            <div class="card__links-wrapper">
-                                <a href="#" class="card__hashtag">#Frontend</a>
-                                <a href="#" class="card__hashtag">#Anothertag</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{/speakers}}
             </div>
         </section>
 
@@ -108,36 +65,19 @@
             <h2 class="title title--inverted">Who's behind it?</h2>
 
             <div class="row">
-                <div class="col-xs-12 col-lg-6 section__column">
-                    <div class="card card--inverted">
-                        <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
+                {{#organizers}}
+                    <div class="col-xs-12 col-lg-6 section__column">
+                        <div class="card card--inverted">
+                            <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
 
-                        <div class="card__content">
-                            <p class="card__title">Artem Zakharchenko</p>
-                            <p class="card__description">Microservices from A to Z</p>
-
-                            <div class="card__links-wrapper">
-                                <a href="#" class="card__hashtag">#Frontend</a>
-                                <a href="#" class="card__hashtag">#Anothertag</a>
+                            <div class="card__content">
+                                <p class="card__title">{{name}}</p>
+                                <p class="card__description">{{desc}}</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-lg-6 section__column">
-                    <div class="card card--inverted">
-                        <img class="card__illustration" src="./assets/images/speaker-logo.svg" alt="Speaker" />
-
-                        <div class="card__content">
-                            <p class="card__title">Artem Zakharchenko</p>
-                            <p class="card__description">Microservices from A to Z</p>
-
-                            <div class="card__links-wrapper">
-                                <a href="#" class="card__hashtag">#Frontend</a>
-                                <a href="#" class="card__hashtag">#Anothertag</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{/organizers}}
+            </div>
         </section>
 
         <section class="section section--inverted partners-section" id="partners">
