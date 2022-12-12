@@ -15,9 +15,31 @@ export const csm = async ({accessToken, space, env}) => {
     const entryPoint = './src/index.html';
     const devContent = './build/content.json';
 
-    const {items} = env !== 'development' ?  await client.getEntries() : JSON.parse(await readFilePromise(devContent, 'utf8'));
+    const contentfulData = env !== 'development' ?  await client.getEntries() : JSON.parse(await readFilePromise(devContent, 'utf8'));
+    const items = contentfulData.items;
 
-    const content = items[0].fields;
+    if(env !== 'development') {
+        writeFileSync('./build/content.json', JSON.stringify(contentfulData));
+    }
+
+    const contentTypes = ['infoLineSection', 'mainTextSection', 'heroText', 'organizers', 'speakers', 'menu'];
+
+    const content = items.reduce((acc, item) => {
+        const acceptItem = contentTypes.includes(item.sys.contentType.sys.id);
+
+        if(acceptItem) {
+            if(!acc[item.sys.contentType.sys.id]) {
+                acc[item.sys.contentType.sys.id] = item.fields;
+            } else if(Array.isArray(acc[item.sys.contentType.sys.id])) {
+                acc[item.sys.contentType.sys.id] = [...acc[item.sys.contentType.sys.id], item.fields];
+            } else {
+                acc[item.sys.contentType.sys.id] = [acc[item.sys.contentType.sys.id], item.fields];
+            }
+        }
+
+        return acc;
+    }, {});
+
     const template = readFileSync('./src/index.mst', 'utf8');
     const output = Mustache.render(template, content);
 
