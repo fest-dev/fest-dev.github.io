@@ -1060,6 +1060,7 @@ body {
 
 .card__illustration {
   width: 200px;
+  border-radius: 40px;
   margin: auto;
 }
 
