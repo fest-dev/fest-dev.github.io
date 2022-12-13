@@ -224,6 +224,7 @@ body {
 }
 
 .card__illustration {
+    border-radius: 40px;
     width: 200px;
     margin: auto;
 }
