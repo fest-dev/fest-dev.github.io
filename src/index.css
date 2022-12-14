@@ -71,6 +71,9 @@ body {
     align-items: center;
     gap: 42px;
     padding: 0 56px;
+    background: url('./assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .header__hero {
