@@ -902,6 +902,7 @@ body {
 
 .header {
   min-height: calc(100vh - 78px);
+  background: url("hero-bg.f3ba855d.jpg") 50% / cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
