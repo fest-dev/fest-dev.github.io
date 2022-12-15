@@ -43,7 +43,7 @@
                 {{#speakers}}
                     <div class="col-xs-12 col-lg-6 section__column">
                         <div class="card">
-                            <img class="card__illustration" src="https://{{photo.fields.file.url}}" alt="Speaker" />
+                            <img class="card__illustration" src="https:{{{photo.fields.file.url}}}" alt="Speaker" />
 
                             <div class="card__content">
                                 <p class="card__title">{{name}}</p>
