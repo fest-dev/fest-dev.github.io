@@ -22,7 +22,15 @@ export const csm = async ({accessToken, space, env}) => {
         writeFileSync('./build/content.json', JSON.stringify(contentfulData));
     }
 
-    const contentTypes = ['infoLineSection', 'mainTextSection', 'heroText', 'organizers', 'speakers', 'menu'];
+    const contentTypes = [
+        'infoLineSection',
+        'mainTextSection',
+        'heroText',
+        'organizers',
+        'speakers',
+        'menu',
+        'partnerWelcomeMessage',
+    ];
 
     const content = items.reduce((acc, item) => {
         const acceptItem = contentTypes.includes(item.sys.contentType.sys.id);
