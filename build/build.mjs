@@ -9,6 +9,8 @@ const entryPoint = await csm({
     space: FD_CMS_SPACE
 });
 
+console.log('entryPoint = ', entryPoint);
+
 let bundler = new Parcel({
     entries: entryPoint,
     defaultConfig: '@parcel/config-default'
