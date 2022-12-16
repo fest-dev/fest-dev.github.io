@@ -30,6 +30,7 @@ export const csm = async ({accessToken, space, env}) => {
         'speakers',
         'menu',
         'partnerWelcomeMessage',
+        'meta'
     ];
 
     const content = items.reduce((acc, item) => {
