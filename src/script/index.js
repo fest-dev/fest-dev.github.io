@@ -1,4 +1,4 @@
-import './main.css';
+import '../css/main.css';
 import { enableStickyNavigation } from './stickyNav';
 import { enableMobileMenu } from './menu';
 

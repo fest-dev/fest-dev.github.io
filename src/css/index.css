@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Five Years Later";
-    src: url(./assets/fonts/five-years-later-regular.otf) format("opentype");
+    src: url('../assets/fonts/five-years-later-regular.otf') format("opentype");
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(./assets/fonts/Roboto-Regular.ttf) format("opentype");
+    src: url('../assets/fonts/Roboto-Regular.ttf') format("opentype");
 }
 
 @keyframes fadeOut {
@@ -71,7 +71,7 @@ body {
     align-items: center;
     gap: 42px;
     padding: 0 56px;
-    background: url('./assets/images/hero-bg.jpg');
+    background: url('../assets/images/hero-bg.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }

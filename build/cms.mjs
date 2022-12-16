@@ -2,8 +2,9 @@ import contentful from 'contentful';
 import Mustache from 'mustache';
 import { readFileSync, writeFileSync } from 'fs';
 import { readFile as readFilePromise } from 'fs/promises';
+import { config } from './config/config.mjs';
 
-
+const { entryPoints, devContent, allowedContentTypes: contentTypes } = config;
 
 export const csm = async ({accessToken, space, env}) => {
     const client = contentful.createClient({
@@ -12,26 +13,12 @@ export const csm = async ({accessToken, space, env}) => {
         accessToken
     });
 
-    const entryPoint = './src/index.html';
-    const devContent = './build/content.json';
-
     const contentfulData = env !== 'development' ?  await client.getEntries() : JSON.parse(await readFilePromise(devContent, 'utf8'));
     const items = contentfulData.items;
 
     if(env !== 'development') {
-        writeFileSync('./build/content.json', JSON.stringify(contentfulData));
+        writeFileSync(devContent, JSON.stringify(contentfulData));
     }
-
-    const contentTypes = [
-        'infoLineSection',
-        'mainTextSection',
-        'heroText',
-        'organizers',
-        'speakers',
-        'menu',
-        'partnerWelcomeMessage',
-        'meta'
-    ];
 
     const content = items.reduce((acc, item) => {
         const acceptItem = contentTypes.includes(item.sys.contentType.sys.id);
@@ -49,12 +36,16 @@ export const csm = async ({accessToken, space, env}) => {
         return acc;
     }, {});
 
-    const template = readFileSync('./src/index.mst', 'utf8');
-    const output = Mustache.render(template, content);
+    entryPoints.forEach((entryPoint) => {
+        const template = readFileSync(entryPoint.input, 'utf8');
+        const output = Mustache.render(template, content);
 
-    writeFileSync(entryPoint, output);
+        writeFileSync(entryPoint.output, output);
+    });
 
-    return entryPoint;
+
+
+    return entryPoints.map(item => item.output);
 }
 
 
