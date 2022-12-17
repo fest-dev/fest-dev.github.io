@@ -178,6 +178,10 @@ body {
     margin: 160px auto;
 }
 
+.main__description.normal__variation {
+    font-size: 1rem;
+}
+
 .partners__invitation {
     color: #000;
     font-size: 1.25rem;
@@ -262,6 +266,12 @@ body {
     text-align: left;
 }
 
+.card__description.organizer__variation {
+    text-transform: none;
+}
+
+
+
 .card__links-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -342,6 +352,11 @@ body {
 
     .main__description {
         font-size: 2.125rem;
+        max-width: 1154px;
+    }
+
+    .main__description.normal__variation {
+        font-size: 1.125rem;
         max-width: 1154px;
     }
 

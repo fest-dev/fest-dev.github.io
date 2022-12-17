@@ -4,14 +4,16 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="{{meta.description}}"/>
+    <meta name="description" content="{{aboutPage.meta}}"/>
     <meta name="keywords" content="{{meta.keywords}}"/>
-    <title>{{meta.title}}</title>
+    <title>{{aboutPage.title}}</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
 </head>
 <body>
     <nav class="nav" id="nav">
-        <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo"/>
+        <a href="/">
+            <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo"/>
+        </a>
         <button class="nav__button" id="mobile-nav-button">
             <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 2H48" stroke="#10BEC9" stroke-width="3"/>
@@ -29,7 +31,7 @@
     </nav>
 
     <main class="main" id="main">
-        <p class="main__description">{{mainTextSection.mainTextSection}}</p>
+        <p class="main__description normal__variation">{{aboutPage.text}}</p>
 
         <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
 
@@ -44,7 +46,7 @@
 
                             <div class="card__content">
                                 <p class="card__title">{{name}}</p>
-                                <p class="card__description">{{desc}}</p>
+                                <p class="card__description organizer__variation">{{desc}}</p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +65,7 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__copyright">© 2023 Devfest. All rights reserved.</p>
+        <p class="footer__copyright">{{footer.text}}</p>
     </footer>
 
     <script src="./script/index.js" type="module"></script>
