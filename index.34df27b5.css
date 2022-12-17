@@ -1012,6 +1012,10 @@ body {
   font-size: 1.5rem;
 }
 
+.main__description.normal__variation {
+  font-size: 1rem;
+}
+
 .partners__invitation {
   color: #000;
   text-transform: uppercase;
@@ -1095,6 +1099,10 @@ body {
   font-size: 1.25rem;
 }
 
+.card__description.organizer__variation {
+  text-transform: none;
+}
+
 .card__links-wrapper {
   flex-wrap: wrap;
   gap: 20px;
@@ -1176,6 +1184,11 @@ body {
   .main__description {
     max-width: 1154px;
     font-size: 2.125rem;
+  }
+
+  .main__description.normal__variation {
+    max-width: 1154px;
+    font-size: 1.125rem;
   }
 
   .partners-section {
