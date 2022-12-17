@@ -16,7 +16,9 @@
 </header>
 
 <nav class="nav" id="nav">
-    <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo">
+    <a href="/">
+        <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo"/>
+    </a>
     <button class="nav__button" id="mobile-nav-button">
         <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 2H48" stroke="#10BEC9" stroke-width="3"/>
@@ -74,7 +76,7 @@
 
                     <div class="card__content">
                         <p class="card__title">{{name}}</p>
-                        <p class="card__description">{{desc}}</p>
+                        <p class="card__description organizer__variation">{{desc}}</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +95,7 @@
 </main>
 
 <footer class="footer">
-    <p class="footer__copyright">© 2023 Devfest. All rights reserved.</p>
+    <p class="footer__copyright">{{footer.text}}</p>
 </footer>
 
 <script src="./script/index.js" type="module"></script>

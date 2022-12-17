@@ -18,6 +18,9 @@ export const config = {
         'speakers',
         'menu',
         'partnerWelcomeMessage',
-        'meta'
+        'meta',
+        'codeOfConduct',
+        'aboutPage',
+        'footer'
     ],
 }
