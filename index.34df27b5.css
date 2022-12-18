@@ -845,6 +845,25 @@ template, [hidden] {
   src: url("Roboto-Regular.7aead463.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Italic.41c79412.ttf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Bold.b109a72e.ttf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-BoldItalic.18e776e2.ttf") format("opentype");
+  font-style: italic;
+  font-weight: bold;
+}
+
 @keyframes fadeOut {
   0% {
     z-index: 0;
@@ -917,6 +936,7 @@ body.no-overflow {
 
 .header__hero {
   width: 100%;
+  max-width: 1440px;
 }
 
 .header__text {
@@ -932,6 +952,7 @@ body.no-overflow {
   gap: 16px;
   padding: 20px;
   font-family: Roboto;
+  font-weight: 400;
   display: flex;
 }
 
