@@ -1141,6 +1141,7 @@ body.no-overflow {
 .card__hashtag {
   color: currentColor;
   text-transform: uppercase;
+  word-break: break-word;
   font-size: 1.125rem;
 }
 
