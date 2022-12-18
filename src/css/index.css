@@ -51,6 +51,10 @@ body {
     font-family: Five Years Later;
 }
 
+body.no-overflow {
+    overflow: hidden;
+}
+
 .title {
     width: 100%;
     font-size: 3.375rem;
@@ -143,7 +147,7 @@ body {
 
 .nav__item {
     color: #fff;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     padding: 4px;
     border-bottom: 1px solid #10BEC9;
@@ -163,6 +167,10 @@ body {
     position: absolute;
     right: 30px;
     top: 30px;
+}
+
+.nav__close-button img {
+    width: 100%;
 }
 
 .main {

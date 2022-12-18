@@ -5,7 +5,7 @@ export const enableMobileMenu = () => {
     const navLinks = navList.querySelectorAll('a');
     const desktopBreakpoint = window.matchMedia('(min-width: 859px)');
     let isDesktop = desktopBreakpoint.matches;
-    
+
     desktopBreakpoint.addEventListener('change', () => {
         isDesktop = desktopBreakpoint.matches;
     });
@@ -13,13 +13,15 @@ export const enableMobileMenu = () => {
     const handleClose = () => {
         navList.classList.remove('nav__list--visible');
         navList.classList.add('nav__list--hidden');
+        document.body.classList.remove('no-overflow');
     }
-    
+
     menuButton.addEventListener('click', () => {
         navList.classList.remove('nav__list--hidden');
         navList.classList.add('nav__list--visible');
+        document.body.classList.add('no-overflow');
     });
-    
+
     closeButton.addEventListener('click', handleClose);
     navLinks.forEach((link) => {
         link.addEventListener('click', (e) => {
