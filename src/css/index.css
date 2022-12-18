@@ -309,6 +309,7 @@ body.no-overflow {
     color: currentColor;
     font-size: 1.125rem;
     text-transform: uppercase;
+    word-break: break-word;
 }
 
 .partners-section {
