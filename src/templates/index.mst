@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets//favicon-16x16.png"/>
     <meta name="theme-color" content="#10BEC9"/>
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
+    <base href="{{meta.host}}" target="_blank"/>
 </head>
 <body>
 <header class="header" id="header">
@@ -31,7 +32,7 @@
     </button>
     <ul class="nav__list" id="nav-list">
         {{#menu}}
-        <li class="nav__item"><a href="{{link}}">{{title}}</a></li>
+        <li class="nav__item"><a href="{{meta.host}}{{link}}">{{title}}</a></li>
         {{/menu}}
         <button class="nav__close-button" aria-label="Close menu" id="close-button">
             <img src="./assets/images/close-icon.svg" alt="" />

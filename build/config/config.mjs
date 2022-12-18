@@ -9,6 +9,7 @@ export const config = {
         input: './src/templates/coc.mst',
         output: './src/coc.html',
     }],
+    localhost: 'http://localhost:3000/',
     devContent: './build/content.json',
     allowedContentTypes: [
         'infoLineSection',
