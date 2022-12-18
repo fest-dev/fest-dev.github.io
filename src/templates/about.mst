@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets//favicon-16x16.png"/>
     <meta name="theme-color" content="#10BEC9"/>
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
-    <base href="{{{meta.host}}}" target="_blank"/>
+    <base href="{{{meta.host}}}"/>
 </head>
 <body>
     <header id="header"></header>
