@@ -210,10 +210,12 @@ const enableMobileMenu = ()=>{
     const handleClose = ()=>{
         navList.classList.remove("nav__list--visible");
         navList.classList.add("nav__list--hidden");
+        document.body.classList.remove("no-overflow");
     };
     menuButton.addEventListener("click", ()=>{
         navList.classList.remove("nav__list--hidden");
         navList.classList.add("nav__list--visible");
+        document.body.classList.add("no-overflow");
     });
     closeButton.addEventListener("click", handleClose);
     navLinks.forEach((link)=>{

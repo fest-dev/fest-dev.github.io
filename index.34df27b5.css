@@ -888,6 +888,10 @@ body {
   font-family: Five Years Later;
 }
 
+body.no-overflow {
+  overflow: hidden;
+}
+
 .title {
   width: 100%;
   color: #10bec9;
@@ -980,7 +984,7 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #10bec9;
   padding: 4px;
-  font-size: 2.25rem;
+  font-size: 1.25rem;
 }
 
 .nav a {
@@ -997,6 +1001,10 @@ body {
   position: absolute;
   top: 30px;
   right: 30px;
+}
+
+.nav__close-button img {
+  width: 100%;
 }
 
 .main {
