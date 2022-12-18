@@ -32,7 +32,7 @@
     </button>
     <ul class="nav__list" id="nav-list">
         {{#menu}}
-        <li class="nav__item"><a href="{{{meta.host}}}{{link}}">{{title}}</a></li>
+        <li class="nav__item"><a href="{{link}}">{{title}}</a></li>
         {{/menu}}
         <button class="nav__close-button" aria-label="Close menu" id="close-button">
             <img src="./assets/images/close-icon.svg" alt="" />
