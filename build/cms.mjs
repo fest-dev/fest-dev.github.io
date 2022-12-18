@@ -17,9 +17,10 @@ export const csm = async ({accessToken, space, env}) => {
     const items = contentfulData.items;
 
     if(env !== 'development') {
+        writeFileSync(devContent, JSON.stringify(contentfulData));
+    } else {
         const meta = contentfulData.items.find(item => item.sys.contentType.sys.id === 'meta');
         meta.fields.host = config.localhost;
-        writeFileSync(devContent, JSON.stringify(contentfulData));
     }
 
     const content = items.reduce((acc, item) => {
