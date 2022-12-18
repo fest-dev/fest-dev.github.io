@@ -25,6 +25,17 @@ export const enableMobileMenu = () => {
     closeButton.addEventListener('click', handleClose);
     navLinks.forEach((link) => {
         link.addEventListener('click', (e) => {
+            const nav = new URL(link.href);
+            const loc = new URL(location.href);
+
+            if(nav.origin !== loc.origin) {
+                return;
+            }
+
+            if(nav.origin === loc.origin && nav.pathname !== loc.pathname) {
+                return;
+            }
+
             if (link.hash) {
                 e.preventDefault();
                 document.querySelector(link.hash).scrollIntoView({ block: 'start', behavior: 'smooth' });
