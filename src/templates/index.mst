@@ -18,9 +18,9 @@
 <header class="header" id="header">
     <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest"/>
     <p class="header__text">{{heroText.heroText}}</p>
-    <a href="https://stellarua.org" target="_blank" class="help-ukraine">
-        <img class="help-ukraine" source="./assets/images/ukraine-ribbon.svg" alt="Help Ukraine ribbon badge.">
-        <p>We're helping Ukraine. <span>You can too!</span></p>
+    <a href="https://stellarua.org" target="_blank" class="help__ukraine">
+        <img src="./assets/images/ukraine-ribbon.svg" alt="Help Ukraine ribbon badge."/>
+        <p>We're helping Ukraine<span>You can too!</span></p>
     </a>
 </header>
 
@@ -105,6 +105,10 @@
 
 <footer class="footer">
     <p class="footer__copyright">{{footer.text}}</p>
+    <a href="https://stellarua.org" target="_blank" class="help__ukraine">
+        <img src="./assets/images/ukraine-ribbon.svg" alt="Help Ukraine ribbon badge."/>
+        <p>We're helping Ukraine<span>You can too!</span></p>
+    </a>
 </footer>
 
 <script src="./script/index.js" type="module"></script>
