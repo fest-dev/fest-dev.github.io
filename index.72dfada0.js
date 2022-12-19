@@ -220,6 +220,7 @@ const enableMobileMenu = ()=>{
     closeButton.addEventListener("click", handleClose);
     navLinks.forEach((link)=>{
         link.addEventListener("click", (e)=>{
+            if (!isDesktop && navList.classList.contains("nav__list--hidden")) return e.preventDefault();
             const nav = new URL(link.href);
             const loc = new URL(location.href);
             if (nav.origin !== loc.origin) return;
