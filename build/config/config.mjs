@@ -1,4 +1,5 @@
 export const config = {
+    domain: 'fest.dev',
     entryPoints: [{
         input: './src/templates/index.mst',
         output: './src/index.html',
