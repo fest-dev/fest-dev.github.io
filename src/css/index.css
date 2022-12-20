@@ -28,6 +28,9 @@
 
 .help__ukraine {
     width: 45px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
 
 
