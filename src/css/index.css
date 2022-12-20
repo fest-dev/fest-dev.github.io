@@ -27,30 +27,7 @@
 /***********/
 
 .help__ukraine {
-    font-family: 'Five Years Later', sans-serif;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    line-height: 1.5em;
-    text-transform: uppercase;
-}
-
-.help__ukraine img {
     width: 45px;
-    margin-right: 20px;
-}
-.help__ukraine span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    display: block;
-    text-decoration: underline;
-    text-transform: none;
-}
-
-footer .help__ukraine {
-    color:#000E17;
 }
 
 
