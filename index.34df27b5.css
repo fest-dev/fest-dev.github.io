@@ -864,6 +864,34 @@ template, [hidden] {
   font-weight: bold;
 }
 
+.help__ukraine {
+  color: #fff;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: Five Years Later, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  text-decoration: none;
+  display: flex;
+}
+
+.help__ukraine img {
+  width: 45px;
+  margin-right: 20px;
+}
+
+.help__ukraine span {
+  text-transform: none;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  display: block;
+}
+
+footer .help__ukraine {
+  color: #000e17;
+}
+
 @keyframes fadeOut {
   0% {
     z-index: 0;
@@ -1151,8 +1179,11 @@ body.no-overflow {
 
 .footer {
   background-color: #fff;
+  justify-content: space-between;
+  align-items: baseline;
   padding: 40px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
+  display: flex;
 }
 
 .footer__copyright {
