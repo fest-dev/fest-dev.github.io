@@ -1171,6 +1171,10 @@ body.no-overflow {
   font-size: 1rem;
 }
 
+a.twitter-follow-button {
+  visibility: hidden;
+}
+
 @media (min-width: 600px) {
   .card {
     flex-direction: row;
