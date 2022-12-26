@@ -340,6 +340,10 @@ body.no-overflow {
     margin: 0;
 }
 
+a.twitter-follow-button {
+    visibility: hidden;
+}
+
 @media all and (min-width: 600px) {
     .card {
         flex-direction: row;
