@@ -35,7 +35,6 @@ export const csm = async ({accessToken, space, env}) => {
                 acc[item.sys.contentType.sys.id] = [acc[item.sys.contentType.sys.id], item.fields];
             }
         }
-
         return acc;
     }, {});
 
