@@ -26,6 +26,7 @@ try {
     let bundles = bundleGraph.getBundles();
     console.log(`✨ Built ${bundles.length} bundles in ${buildTime}ms!`);
 } catch (err) {
+    console.error('Built failed');
     console.log(err.diagnostics);
 }
 

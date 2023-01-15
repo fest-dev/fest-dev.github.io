@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/fest-dev/fest.dev#readme",
   "devDependencies": {
+    "@parcel/transformer-jsonld": "^2.8.2",
     "contentful": "^9.2.14",
     "dotenv": "^16.0.3",
     "mustache": "^4.2.0",
     "parcel": "^2.8.0"
-  },
-  "dependencies": {}
+  }
 }
