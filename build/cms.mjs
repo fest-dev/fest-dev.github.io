@@ -41,7 +41,15 @@ export const csm = async ({accessToken, space, env}) => {
 
     entryPoints.forEach((entryPoint) => {
         const template = readFileSync(entryPoint.input, 'utf8');
-        const output = Mustache.render(template, content);
+        const fragments = Object.keys(entryPoint.fragments || {}).reduce((acc, fragmentKey) => {
+            const fragment = readFileSync(entryPoint.fragments[fragmentKey], 'utf8');
+            return {
+                ...acc,
+                [fragmentKey]: fragment
+            };
+        }, {});
+
+        const output = Mustache.render(template, content, fragments);
 
         writeFileSync(entryPoint.output, output);
     });
