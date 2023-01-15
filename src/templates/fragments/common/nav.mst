@@ -1,0 +1,19 @@
+<nav class="nav" id="nav">
+    <a href="/">
+        <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo"/>
+    </a>
+    <button class="nav__button" id="mobile-nav-button">
+        <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 2H48" stroke="#10BEC9" stroke-width="3"/>
+            <path d="M0 20H48" stroke="#10BEC9" stroke-width="3"/>
+        </svg>
+    </button>
+    <ul class="nav__list" id="nav-list">
+        {{#menu}}
+        <li class="nav__item"><a href="{{link}}">{{title}}</a></li>
+        {{/menu}}
+        <button class="nav__close-button" aria-label="Close menu" id="close-button">
+            <img src="./assets/images/close-icon.svg" alt="" />
+        </button>
+    </ul>
+</nav>

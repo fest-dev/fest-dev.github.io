@@ -1,0 +1,10 @@
+<header class="header" id="header">
+    <a href="https://stellarua.org" target="_blank" class="help__ukraine">
+        <img src="./assets/images/ukraine-ribbon.svg" alt="Help Ukraine"/>
+    </a>
+    <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest"/>
+    <p class="header__text">{{heroText.heroText}}</p>
+    <p>
+        <a href="https://twitter.com/devfestconf?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @devfestconf</a>
+    </p>
+</header><header id="header"></header>

@@ -15,74 +15,10 @@
     <base href="{{{meta.host}}}"/>
 </head>
 <body>
-    <header id="header"></header>
-    <nav class="nav" id="nav">
-        <a href="/">
-            <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo"/>
-        </a>
-        <button class="nav__button" id="mobile-nav-button">
-            <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 2H48" stroke="#10BEC9" stroke-width="3"/>
-                <path d="M0 20H48" stroke="#10BEC9" stroke-width="3"/>
-            </svg>
-        </button>
-        <ul class="nav__list" id="nav-list">
-            {{#menu}}
-                <li class="nav__item"><a href="{{link}}">{{title}}</a></li>
-            {{/menu}}
-            <button class="nav__close-button" aria-label="Close menu" id="close-button">
-                <img src="./assets/images/close-icon.svg" alt="" />
-            </button>
-        </ul>
-    </nav>
-
-    <main class="main" id="main">
-        <p class="main__description normal__variation">{{aboutPage.text}}</p>
-
-        <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
-
-        <section class="section section--inverted" id="organizers">
-            <h2 class="title title--inverted">Who's behind it?</h2>
-
-            <div class="row">
-                {{#organizers}}
-                    <div class="col-xs-12 col-lg-6 section__column">
-                        <div class="card card--inverted">
-                            <img class="card__illustration" src="https:{{{image.fields.file.url}}}" alt="{{name}}" />
-
-                            <div class="card__content">
-                                <p class="card__title">{{name}}</p>
-                                <p class="card__description organizer__variation">{{desc}}</p>
-                            </div>
-                        </div>
-                    </div>
-                {{/organizers}}
-            </div>
-        </section>
-
-        <section class="section section--inverted partners-section" id="partners">
-            <h2 class="title title--inverted">Meet the Partners</h2>
-            <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p>
-
-            <!--
-                <img src="./path.png" alt="" />
-            -->
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p class="footer__copyright">{{footer.text}}</p>
-    </footer>
-
-    <script src="./script/index.js" type="module"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPD8P61H27"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-LPD8P61H27');
-    </script>
+    {{> header }}
+    {{> nav }}
+    {{> main }}
+    {{> footer }}
+    {{> bottomScripts }}
 </body>
 </html>
