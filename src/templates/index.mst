@@ -96,7 +96,7 @@
             {{#organizers}}
             <div class="col-xs-12 col-lg-6 section__column">
                 <div class="card card--inverted">
-                    <img class="card__illustration" src="https:{{{image.fields.file.url}}}" alt="{{name}}" />
+                    <img class="card__illustration" data-luis=5 src="https:{{{image.fields.file.url}}}" alt="{{name}}" />
 
                     <div class="card__content">
                         <p class="card__title">{{name}}</p>
