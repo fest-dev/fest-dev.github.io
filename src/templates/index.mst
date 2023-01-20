@@ -29,7 +29,7 @@
 </head>
 <body>
 <header class="header" id="header">
-    <a href="https://stellarua.org" data-luis=1 target="_blank" class="help__ukraine">
+    <a href="https://stellarua.org" target="_blank" class="help__ukraine">
         <img src="./assets/images/ukraine-ribbon.svg" alt="Help Ukraine"/>
     </a>
     <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest"/>
@@ -108,7 +108,7 @@
         </div>
     </section>
 
-    <section class="section section--inverted partners-section" id="partners">
+    <section class="section section--inverted partners-section" data-luis=4 id="partners">
         <h2 class="title title--inverted">Meet the Partners</h2>
         <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p>
 
