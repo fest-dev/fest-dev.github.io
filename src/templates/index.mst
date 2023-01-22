@@ -29,7 +29,7 @@
 </head>
 <body>
 <header class="header" id="header">
-    <a href="https://stellarua.org" data-luis=1 target="_blank" class="help__ukraine">
+    <a href="https://stellarua.org" data-luis=2 target="_blank" class="help__ukraine">
         <img src="./assets/images/ukraine-ribbon.svg" alt="Help Ukraine"/>
     </a>
     <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest"/>
