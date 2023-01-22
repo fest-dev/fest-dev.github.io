@@ -22,7 +22,7 @@
                             {{/tags}}
                         </div>
 
-                        <button class="card__more-button" data-card-button><span class="card__button-content">More</span><img src="./assets/images/plus-icon.svg" alt=""></button>
+                       <!-- <button class="card__more-button" data-card-button><span class="card__button-content">More</span><img src="./assets/images/plus-icon.svg" alt=""></button> -->
 
                         <div class="modal" role="dialog" aria-hidden>
                             <div class="modal__personal">
