@@ -252,10 +252,21 @@ body.no-overflow {
     flex-wrap: wrap;
     gap: 40px;
     padding: 80px 40px 0 40px;
+    overflow: hidden;
 }
 
 .section--inverted {
     background: #fff;
+}
+
+.section__description {
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    max-width: 680px;
+    margin-bottom: 40px;
+    color: #B2B8BC;
 }
 
 .section__column {
@@ -351,6 +362,70 @@ body.no-overflow {
 
 .partners-section {
     padding: 80px 40px 40px 40px;
+}
+
+.partners__list {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin-bottom: 80px;
+    overflow-x: scroll;
+}
+
+.partners__list dt {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    border-top: 2px solid #B2B8BC;
+    padding: 44px 190px 44px 0;
+    font-size: 40px;
+    color: #000E17;
+    text-transform: uppercase;
+}
+
+.partners__list dd {
+    border-top: 2px solid #B2B8BC;
+    padding: 44px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    gap: 70px;
+}
+
+.partners__contact {
+    display: flex;
+    flex-direction: column;
+    background: #000E17;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 660px;
+}
+
+.partners__contact-title {
+    color: #10BEC9;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.partners__contact-text {
+    color: #B2B8BC;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.partners__contact-text a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer {
@@ -487,16 +562,6 @@ a.twitter-follow-button {
     padding-bottom: 80px;
 }
 
-.location__description {
-    font-size: 20px;
-    font-family: Roboto;
-    font-weight: 400;
-    text-align: center;
-    max-width: 680px;
-    margin-bottom: 40px;
-    color: #B2B8BC;
-}
-
 .location__image {
     width: 100%;
 }
@@ -587,5 +652,9 @@ a.twitter-follow-button {
     .partners-section {
         padding: 80px 120px 40px 120px;
         font-family: Roboto;
+    }
+
+    .partners__contact-title {
+        font-size: 40px;
     }
 }
