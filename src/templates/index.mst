@@ -82,11 +82,71 @@
                             <a href="#" class="card__hashtag">#{{.}}</a>
                             {{/tags}}
                         </div>
+
+                        <button class="card__more-button" data-card-button><span class="card__button-content">More</span><img src="./assets/images/plus-icon.svg" alt=""></button>
+
+                        <div class="modal" role="dialog" aria-hidden>
+                            <div class="modal__personal">
+                                <img src="https://images.ctfassets.net/zms3oc04yx81/5pG1DluYjZUrTuJELhGVbJ/68ade647adc6bed0b3c268bb0b2ae1db/romulo.jpg" class="modal__image" alt="Speaker logo" />
+                                <div class="modal__personal-content">
+                                    <p class="modal__section-title">Social</p>
+                                    <ul class="modal__social-list">
+                                        <li class="modal__social-item">
+                                            <a href="#" class="modal__social-link" target="_blank" rel="noreferrer">LinkedIn</a>
+                                        </li>
+                                        <li class="modal__social-item">
+                                            <a href="#" class="modal__social-link" target="_blank" rel="noreferrer">GitHub</a>
+                                        </li>
+                                        <li class="modal__social-item">
+                                            <a href="#" class="modal__social-link" target="_blank" rel="noreferrer">Personal Website</a>
+                                        </li>
+                                        <li class="modal__social-item">
+                                            <a href="#" class="modal__social-link" target="_blank" rel="noreferrer">Twitter</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="modal__info">
+                                <p class="modal__name">Romulo Cintra</p>
+                                <div class="modal__location">Barcelona, Spain</div>
+
+                                <div class="modal__technologies">
+                                    <p class="modal__section-title">Technologies</p>
+                                    <p class="modal__description">Web Technologies (Capabilities & Installability)</p>
+                                </div>
+
+                                <p class="modal__description">
+                                    Technology enthusiast, working in Software development and Architectures for more than 10 years. Contributor in several Open Source projects, TC39 - ECMA-402, chair of the Unicode Message Format Working Group and blogger in part-time. Romulo combines a passion for front-end development together with DevOps and back-end skill sets. His biggest goal is to democratize technology, empower and educate others to build better products on top of the Web Technologies and Cloud. He loves and advocates for the future of the Web as a decentralized technology culture where all the globe is connected and accessible.
+                                </p>
+                            </div>
+
+                            <button class="modal__close" aria-label="Close window" data-modal-close>
+                                <img src="./assets/images/modal-close-icon.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
             {{/speakers}}
         </div>
+    </section>
+
+    <section class="section location" id="organizers">
+        <h2 class="title">The Venue</h2>
+
+        <p class="location__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p> <br />
+
+        <address class="location__address">
+            <div class="location__address-title">Devfest 2023 will happen in:</div>
+
+            <b>Edifício da Alfândega</b> <br />
+            R. Nova da Alfândega,  <br />
+            4050-430 Porto <br />
+            Portugal <br />
+        </address>
+
+        <img class="location__image" src="./assets/images/map-image.png" alt="Event location">
     </section>
 
     <section class="section section--inverted" id="organizers">
