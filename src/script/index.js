@@ -111,8 +111,6 @@ function initMap() {
         });
         const infowindow = new google.maps.InfoWindow();
         google.maps.event.addListener(marker, 'click', function() {
-            console.log(place.name);
-            console.log(place.formatted_address);
             infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + place.formatted_address + '</div>');
             infowindow.open(map, this);
         });
