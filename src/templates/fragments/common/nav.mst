@@ -12,6 +12,7 @@
         {{#menu}}
         <li class="nav__item"><a href="{{link}}">{{title}}</a></li>
         {{/menu}}
+        <li class="nav__item promo"><a target="_blank" href="https://www.eventbrite.pt/e/frontend-conference-frontend-festival-porto-2023-tickets-497907343267">Get Ticket</a></li>
         <button class="nav__close-button" aria-label="Close menu" id="close-button">
             <img src="./assets/images/close-icon.svg" alt="" />
         </button>
