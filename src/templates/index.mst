@@ -35,7 +35,7 @@
     <img class="header__hero" src="./assets/images/main-hero.svg" alt="DevFest"/>
     <p class="header__text">{{heroText.heroText}}</p>
     <p>
-        <a href="https://twitter.com/devfestconf?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @devfestconf</a>
+        <a href="https://twitter.com/devfestconf?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-luis=3 data-show-count="false">Follow @devfestconf</a>
     </p>
 </header>
 
