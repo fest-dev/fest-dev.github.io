@@ -474,7 +474,7 @@ a.twitter-follow-button {
     --transition-end-position-y: -50%;
 
     width: calc(100% - 32px);
-    max-height: calc(100% - 32px);
+    max-height: calc(100% - 200px);
     overflow-y: scroll;
     max-width: 840px;
     display: flex;
@@ -504,10 +504,11 @@ a.twitter-follow-button {
 }
 
 .modal__name {
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     color: #061B29;
     margin: 0;
+    word-break: break-word;
 }
 
 .modal__location {
@@ -697,11 +698,12 @@ a.twitter-follow-button {
     .modal__personal {
         flex-direction: row;
         align-items: flex-start;
-    }
-    
-    .modal__personal {
         gap: 40px;
         margin-bottom: 40px;
+    }
+
+    .modal__name {
+        font-size: 60px;
     }
     
     .modal__personal-content {
