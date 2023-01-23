@@ -57,6 +57,7 @@
             <img src="./assets/images/close-icon.svg" alt="" />
         </button>
     </ul>
+    <a href="https://www.eventbrite.pt/e/frontend-conference-frontend-festival-porto-2023-tickets-497907343267" target="_blank" rel="noreferrer" class="nav__get-tickets">Get Tickets</button>
 </nav>
 
 <main class="main" id="main">

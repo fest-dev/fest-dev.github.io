@@ -131,6 +131,7 @@ body.no-overflow {
     font-weight: 400;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 16px;
     padding: 20px;
 }
@@ -151,6 +152,7 @@ body.no-overflow {
     background: transparent;
     border: none;
     cursor: pointer;
+    order: 2;
 }
 
 .nav__list {
@@ -169,6 +171,20 @@ body.no-overflow {
     padding: 15vh 0 0 0;
     margin: 0;
     transform: translate(99999px);
+}
+
+.nav__get-tickets {
+    padding: 8px 12px;
+    background: #10BEC9;
+    border-radius: 10px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000E17;
+    cursor: pointer;
+    order: 1;
+    margin: 0 0 0 auto;
 }
 
 .animate-visible {
@@ -609,6 +625,12 @@ a.twitter-follow-button {
 
     .nav__button {
         display: none;
+        order: 1;
+    }
+
+    .nav__get-tickets {
+        order: 2;
+        margin: 0;
     }
 
     .nav__list {
