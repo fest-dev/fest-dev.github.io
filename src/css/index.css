@@ -87,6 +87,11 @@ body.no-overflow {
     overflow: hidden;
 }
 
+#map {
+    height: 600px;
+    width: 100%;
+}
+
 .title {
     width: 100%;
     font-size: 3.375rem;
@@ -142,6 +147,7 @@ body.no-overflow {
     left: 0;
     width: 100%;
     background-color: #000E17;
+    z-index: 100;
 }
 
 .nav__logo {

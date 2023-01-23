@@ -21,6 +21,42 @@
                             <a href="#" class="card__hashtag">#{{.}}</a>
                             {{/tags}}
                         </div>
+
+                       <button class="card__more-button" data-card-button><span class="card__button-content">More</span><img src="./assets/images/plus-icon.svg" alt=""></button>
+
+                        <div class="modal" role="dialog" aria-hidden>
+                            <div class="modal__personal">
+                                <img src="https:{{{photo.fields.file.url}}}" class="modal__image" alt="{{name}}" />
+
+                                <div class="modal__personal-content">
+                                    <p class="modal__name">{{name}}</p>
+                                </div>
+                            </div>
+
+                            <p class="modal__section-title">Social</p>
+                            <ul class="modal__social-list">
+                                <li class="modal__social-item">
+                                    <a href="#" class="modal__social-link" target="_blank" rel="noreferrer">Twitter</a>
+                                </li>
+                            </ul>
+
+                            <div class="modal__technologies">
+                                <p class="modal__section-title">
+                                    {{#tags}}
+                                    <a href="#" class="card__hashtag">#{{.}}</a>
+                                    {{/tags}}
+                                </p>
+                                <p class="modal__description text-center">{{theme}}</p>
+                            </div>
+
+                            <p class="modal__description">
+                                {{description}}
+                            </p>
+
+                            <button class="modal__close" aria-label="Close window" data-modal-close>
+                                <img src="./assets/images/modal-close-icon.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,8 +64,24 @@
         </div>
     </section>
 
+    <section class="section location" id="organizers">
+        <h2 class="title">The Venue</h2>
+        <p class="section__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p>
+        <address class="location__address">
+            <b>Edifício da Alfândega</b>
+            <br />
+            R. Nova da Alfândega,
+            <br />
+            4050-430 Porto,
+            <br />
+            Portugal,
+        </address>
+
+        <div id="map"></div>
+    </section>
+
     <section class="section section--inverted" id="organizers">
-        <h2 class="title title--inverted">Who's behind it?</h2>
+        <h2 class="title">Who's behind it?</h2>
 
         <div class="row">
             {{#organizers}}
@@ -48,11 +100,43 @@
     </section>
 
     <section class="section section--inverted partners-section" id="partners">
-        <h2 class="title title--inverted">Meet the Partners</h2>
+        <h2 class="title">Meet the Partners</h2>
         <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p>
 
-        <!--
-            <img src="./path.png" alt="" />
-        -->
+        {{! <h2 class="title">Our Partners</h2>
+        <p class="section__description">Here are the coolest Partners that are making this festival possible.</p> }}
+
+        {{! <dl class="partners__list">
+            <dt>Exclusive</dt>
+            <dd>
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+            </dd>
+            <dt>Platinum</dt>
+            <dd>
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+            </dd>
+            <dt>Gold</dt>
+            <dd>
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+            </dd>
+            <dt>Silver</dt>
+            <dd>
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+                <img src="./assets/images/partner-logo.png" alt="Partner logo">
+            </dd>
+        </dl> }}
+{{! 
+        <div class="partners__contact">
+            <p class="partners__contact-title">Feel like<br /> contributing?</p>
+
+            <p class="partners__contact-text">Reach us at <a href="mailto:partners@fest.dev" target="_blank" rel="noreferrer">partners@fest.dev</a></p>
+        </div> }}
     </section>
 </main>
