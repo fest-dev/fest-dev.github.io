@@ -15,6 +15,7 @@
                     <div class="card__content">
                         <p class="card__title">{{name}}</p>
                         <p class="card__description">{{theme}}</p>
+                        <p class="card__position">{{company}}</p>
 
                         <div class="card__links-wrapper">
                             {{#tags}}
@@ -36,7 +37,7 @@
                             <p class="modal__section-title">Social</p>
                             <ul class="modal__social-list">
                                 <li class="modal__social-item">
-                                    <a href="#" class="modal__social-link" target="_blank" rel="noreferrer">Twitter</a>
+                                    <a href="https://twitter.com/{{twitter}}" class="modal__social-link" target="_blank" rel="noreferrer">Twitter</a>
                                 </li>
                             </ul>
 
@@ -132,7 +133,7 @@
                 <img src="./assets/images/partner-logo.png" alt="Partner logo">
             </dd>
         </dl> }}
-{{! 
+{{!
         <div class="partners__contact">
             <p class="partners__contact-title">Feel like<br /> contributing?</p>
 
