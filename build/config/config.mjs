@@ -44,6 +44,7 @@ export const config = {
         'meta',
         'codeOfConduct',
         'aboutPage',
-        'footer'
+        'footer',
+        'infoPartners',
     ],
 }
