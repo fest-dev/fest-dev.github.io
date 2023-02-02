@@ -24,13 +24,96 @@
     font-weight: bold;
 }
 
-/***********/
+/* VARIABLES */
+
+:root {
+    --primary: #10BEC9;
+	--secondary: #FFD770;
+
+    /*type*/
+	--text_small: 16px;
+	--text_base: 19px;
+	--text_big: 22px;
+	--text_biggest: 36px;
+}
+
+
+/********** START **********/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Five Years Later", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.header {
+    min-height: calc(100vh - 78px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 56px;
+    background: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.header__hero {
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 40px;
+}
+
+.header__text {
+    font-family: "Five Years Later", sans-serif;
+    font-size: var(--text_big);
+    color: var(--primary);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 0 0 60px;
+}
+.header__date {
+    font-family: "Five Years Later", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--secondary);
+    margin: 0 0 10px;
+}
+
+.header__location {
+    font-family: "Five Years Later", sans-serif;
+    font-size: var(--text_small);
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: self-end;
+    margin-bottom: 40px;
+}
+.header__location::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('../assets/images/location.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+}
+
 
 .help__ukraine {
-    width: 45px;
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 20px;
+}
+.help__ukraine img {
+    width: 45px;
 }
 
 
@@ -80,7 +163,9 @@
 body {
     background-color: #000E17;
     min-height: 100vh;
-    font-family: Five Years Later;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.no-overflow {
@@ -105,39 +190,14 @@ body.no-overflow {
     color: #000E17;
 }
 
-.header {
-    min-height: calc(100vh - 78px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 42px;
-    padding: 0 56px;
-    background: url('../assets/images/hero-bg.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.header__hero {
-    width: 100%;
-    max-width: 1440px;
-}
-
-.header__text {
-    margin: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
 .nav {
-    font-family: Roboto;
-    font-weight: 400;
+    font-family: "Five Years Later", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -205,8 +265,8 @@ body.no-overflow {
     color: #fff;
     font-size: 1.25rem;
     text-transform: uppercase;
-    padding: 4px;
-    border-bottom: 1px solid #10BEC9;
+    padding: 0 0 2px;
+    border-bottom: 2px solid var(--primary);
 }
 
 .nav a {
@@ -235,8 +295,10 @@ body.no-overflow {
 }
 
 .main__description {
+    font-family: "Five Years Later", sans-serif;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: var(--text_biggest);
+    line-height: 140%;
     text-transform: uppercase;
     padding: 0 20px;
     margin: 160px auto;
@@ -333,19 +395,15 @@ body.no-overflow {
 }
 
 .card__description {
-    font-family: Roboto;
     margin: 0 0 20px 0;
     font-size: 1.25rem;
-    text-transform: uppercase;
     color: var(--card-description-color);
     text-align: left;
 }
 
 .card__position {
-    font-family: Roboto;
     margin: 0 0 20px 0;
     font-size: 1rem;
-    text-transform: uppercase;
     color: var(--card-main-color);
     text-align: left;
 }
@@ -642,7 +700,9 @@ a.twitter-follow-button {
 
 @media all and (min-width: 860px) {
     .header__text {
-        font-size: 2.125rem;
+        font-size: var(--text_big);
+        color: var(--primary);
+        
     }
 
     .nav__button {
@@ -709,16 +769,17 @@ a.twitter-follow-button {
     }
 
     .main__info {
-        font-size: 2.125rem;
+        font-family: "Five Years Later", sans-serif;
+        font-size: var(--text_big);
+        line-height: 1em;
     }
 
     .main__description {
-        font-size: 2.125rem;
+        font-size: var(--text_biggest);
         max-width: 1154px;
     }
 
     .main__description.normal__variation {
-        font-size: 1.125rem;
         max-width: 1154px;
     }
 
