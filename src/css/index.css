@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .3em;
-    margin: 0 0 60px;
+    margin: 0 0 40px;
 }
 .header__date {
     font-family: "Five Years Later", sans-serif;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
 }
 .help__ukraine img {
-    width: 45px;
+    width: 32px;
 }
 
 
@@ -747,12 +747,16 @@ a.twitter-follow-button {
     .header {
         padding: 0 80px;
     }
-
+    .header__text {
+        margin-bottom: 80px;
+    }
     #speakers .row,
     #organizers .row {
         grid-template-columns: 1fr 1fr;
     }
-
+    .help__ukraine img {
+        width: 40px;
+    }
     .card {
         flex-direction: row;
     }
