@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="section location" id="organizers">
+    <section class="section location" id="location">
         <h2 class="title">The Venue</h2>
         <p class="section__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p>
         <address class="location__address">
