@@ -1,11 +1,13 @@
 <main class="main" id="main">
-    <p class="main__description">{{mainTextSection.mainTextSection}}</p>
-
-    <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
+    <section class="section" id="intro">
+        <p class="main__description">{{mainTextSection.mainTextSection}}</p>
+        <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
+    </section>
 
     <section class="section" id="speakers">
-        <h2 class="title">Speakers</h2>
-
+        <div class="section__header"> 
+            <h2 class="title">Speakers</h2>
+        <div>
         <div class="row center-xs start-lg">
             {{#speakers}}
             <div class="col-xs-12 col-lg-6 section__column">
@@ -66,24 +68,20 @@
     </section>
 
     <section class="section location" id="location">
-        <h2 class="title">The Venue</h2>
-        <p class="section__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p>
+        <div class="section__header"> 
+            <h2 class="title">The Venue</h2>
+            <p class="section__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p>
+        </div>
         <address class="location__address">
-            <b>Edifício da Alfândega</b>
-            <br />
-            R. Nova da Alfândega,
-            <br />
-            4050-430 Porto,
-            <br />
-            Portugal,
+            <p><span class="venue__name">Edifício da Alfândega </span>R. Nova da Alfândega, 4050-430 Porto, Portugal</p>
         </address>
-
         <div id="map"></div>
     </section>
 
     <section class="section section--inverted" id="organizers">
-        <h2 class="title">Who's behind it?</h2>
-
+        <div class="section__header">
+            <h2 class="title">Who's behind it?</h2>
+        </div>
         <div class="row">
             {{#organizers}}
             <div class="col-xs-12 col-lg-6 section__column">
@@ -101,12 +99,14 @@
     </section>
 
     <section class="section section--inverted partners-section" id="partners">
-        <!-- <h2 class="title">Meet the Partners</h2>
-        <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p> -->
-
-        <h2 class="title">Our Partners</h2>
-        <p class="section__description">Here are the coolest Partners that are making this festival possible.</p>
-
+        
+        <div class="section__header">
+            <!-- <h2 class="title">Meet the Partners</h2>
+            <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p> -->
+            
+            <h2 class="title">Our Partners</h2>
+            <p class="section__description">Here are the coolest Partners that are making this festival possible.</p>
+        </div>
          <dl class="partners__list">
              <!-- <dt>Gold</dt>
               <dd>
