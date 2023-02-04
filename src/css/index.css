@@ -52,13 +52,30 @@
 
 /********** START **********/
 
+
+.header__hero,
+.main__description,
+#speakers .row, 
+#organizers .row, 
+.partners__list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#twitter-widget-0 {
+    position: absolute!important;
+    top: 20px;
+    left: 20px;
+}
+
 #speakers .row,
 #organizers .row {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 80px;
     grid-row-gap: 80px;
-    width: 100%;
 }
 
 
@@ -172,20 +189,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     min-height: calc(100vh - 78px);
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 56px;
     background: url('../assets/images/main-bg.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .header__hero {
-    width: 100%;
-    max-width: 1280px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .header__text {
@@ -201,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__date {
     font-family: "Five Years Later", sans-serif;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: var(--text_biggest);
     color: var(--secondary);
     margin: 0 0 10px;
 }
@@ -417,10 +432,8 @@ body.no-overflow {
     font-family: "Five Years Later", sans-serif;
     color: #fff;
     font-size: var(--text_biggest);
-    line-height: 140%;
+    line-height: var(--lh-regular);
     text-transform: uppercase;
-    padding: 0 20px;
-    margin: 160px auto;
 }
 
 .main__description.normal__variation {
@@ -484,7 +497,6 @@ body.no-overflow {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    width: 100%;
     margin-bottom: 80px;
     overflow-x: scroll;
 }
@@ -524,7 +536,6 @@ body.no-overflow {
     background: var(--primary);
     border-radius: 40px;
     padding: 40px 20px;
-    width: 100%;
     max-width: 660px;
 }
 
@@ -720,12 +731,22 @@ a.twitter-follow-button {
     .section {
         padding: 80px 40px;
     }
+    .header {
+        padding: 0 40px;
+    }
     .card {
         flex-direction: row;
     }
 }
 
 @media all and (min-width: 980px) {
+
+    .section {
+        padding: 120px 80px;
+    }
+    .header {
+        padding: 0 80px;
+    }
 
     #speakers .row,
     #organizers .row {
@@ -798,10 +819,6 @@ a.twitter-follow-button {
         display: none;
     }
 
-    .section {
-        padding: 120px 80px;
-    }
-
     .section__column {
         justify-content: flex-start;
     }
@@ -818,11 +835,9 @@ a.twitter-follow-button {
 
     .main__description {
         font-size: var(--text_biggest);
-        max-width: 1154px;
     }
 
     .main__description.normal__variation {
-        max-width: 1154px;
     }
 
     .partners-section {
