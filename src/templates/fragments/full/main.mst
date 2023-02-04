@@ -7,7 +7,7 @@
     <section class="section" id="speakers">
         <div class="section__header"> 
             <h2 class="title">Speakers</h2>
-        <div>
+        </div>
         <div class="row center-xs start-lg">
             {{#speakers}}
             <div class="col-xs-12 col-lg-6 section__column">
@@ -72,10 +72,10 @@
             <h2 class="title">The Venue</h2>
             <p class="section__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p>
         </div>
-        <address class="location__address">
+        <div id="map"></div>
+            <address class="location__address">
             <p><span class="venue__name">Edifício da Alfândega </span>R. Nova da Alfândega, 4050-430 Porto, Portugal</p>
         </address>
-        <div id="map"></div>
     </section>
 
     <section class="section section--inverted" id="organizers">
@@ -131,8 +131,7 @@
         </dl>
 
         <div class="partners__contact">
-            <p class="partners__contact-title">Feel like<br /> contributing?</p>
-
+            <p class="partners__contact-title">Feel like contributing?</p>
             <p class="partners__contact-text">Reach us at <a href="mailto:partners@fest.dev" target="_blank" rel="noreferrer">partners@fest.dev</a></p>
         </div>
     </section>

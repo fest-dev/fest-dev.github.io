@@ -40,29 +40,83 @@
 	--text_big: 22px;
     --text_bigger: 28px;
 	--text_biggest: 36px;
-    --text_huge: 80px;
+    --text_huge: 72px;
 
     /*line heights*/
     --lh-compact: 1em;
-    --lh-regular: 1.3em;
-    --lh-big: 1.5em;
+    --lh-small: 1.3em;
+    --lh-regular: 1.5em;
+    --lh-big: 1.8em;
 
 }
 
 
 /********** START **********/
 
+.section__header {
+    margin-bottom: 40px;
+}
+
+#intro {
+    align-items: center;
+    background: url('../assets/images/bg-2.jpg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+#speakers {
+    background: url('../assets/images/bg-3.jpg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#location {
+    background: url('../assets/images/bg-1.jpg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#organizers {
+    background: url('../assets/images/bg-2.jpg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#partners {
+    background: url('../assets/images/bg-last.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+
+p {
+    margin: 0 0 20px 0;
+}
 
 .header__hero,
 .main__description,
 #speakers .row, 
 #organizers .row, 
-.partners__list {
+.partners__list,
+.section__header,
+#map,
+.location__address,
+.main__info {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+address {
+    font-style: normal;
+}
 
 #twitter-widget-0 {
     position: absolute!important;
@@ -74,8 +128,9 @@
 #organizers .row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 80px;
-    grid-row-gap: 80px;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    margin: 40px 0;
 }
 
 
@@ -87,7 +142,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 30px;
     color: white;
 }
 
@@ -98,7 +153,7 @@ button {
 
 .card__illustration {
     border-radius: 40px;
-    width: 150px;
+    width: 140px;
 }
 
 .card__content {
@@ -108,7 +163,7 @@ button {
 
 .card__title {
     font-family: "Five Years Later", sans-serif;
-    margin: 0 0 4px 0;
+    margin: 0 0 20px 0;
     font-size: var(--text_bigger);
     text-transform: uppercase;
     text-align: left;
@@ -117,6 +172,7 @@ button {
 .card__description {
     margin: 0 0 20px 0;
     font-size: var(--text_base);
+    line-height: var(--lh-regular);
     color: var(--gray-lightest);
     text-align: left;
 }
@@ -184,11 +240,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Five Years Later", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
+    line-height: var(--lh-compact);
     margin: 0;
 }
 
 .header {
-    min-height: calc(100vh - 78px);
+    min-height: calc(100vh - 56px);
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -200,25 +257,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__hero {
-    margin: 40px 0;
+    margin: 40px 0 20px;
 }
 
 .header__text {
     font-family: "Five Years Later", sans-serif;
-    font-size: var(--text_big);
+    font-size: var(--text_base);
+    line-height: var(--lh-small);
     color: var(--primary);
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .3em;
+    letter-spacing: .25em;
     margin: 0 0 40px;
 }
 .header__date {
     font-family: "Five Years Later", sans-serif;
     text-transform: uppercase;
-    font-size: var(--text_biggest);
+    font-size: var(--text_bigger);
     color: var(--secondary);
     margin: 0 0 10px;
+    text-align: center;
 }
 
 .header__location {
@@ -310,42 +369,50 @@ body.no-overflow {
 #map {
     height: 600px;
     width: 100%;
+    border-radius: 10px;
 }
 
 .title {
-    font-size: var(--text_huge);
+    font-size: var(--text_biggest);
+    line-height: var(--lh-compact);
     color: var(--primary);
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 .title--inverted {
-    color: #000E17;
+    color: var(--gray-darkest);
 }
 
 .nav {
     font-family: "Five Years Later", sans-serif;
-    font-weight: normal;
+    font-size: var(--text_small);
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .nav--sticky {
+    width: 100%;
+    z-index: 100;
+    background-color: #000e17d4;
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: #000E17;
-    z-index: 100;
+    backdrop-filter: blur(12px);
 }
 
 .nav__logo {
-    width: 40px;
+    opacity: 0;
+    height: 36px;
+}
+
+.nav--sticky .nav__logo {
+    opacity: 1;
 }
 
 .nav__button {
@@ -366,7 +433,6 @@ body.no-overflow {
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    background: #000E17;
     gap: 70px;
     padding: 15vh 0 0 0;
     margin: 0;
@@ -397,13 +463,13 @@ body.no-overflow {
 
 .nav__item {
     color: #fff;
-    font-size: 1.25rem;
     text-transform: uppercase;
     padding: 0 0 2px;
     border-bottom: 2px solid var(--primary);
 }
 
 .nav a {
+    display: flex;
     color: currentColor;
     text-decoration: none;
 }
@@ -431,10 +497,20 @@ body.no-overflow {
 .main__description {
     font-family: "Five Years Later", sans-serif;
     color: #fff;
-    font-size: var(--text_biggest);
-    line-height: var(--lh-regular);
+    font-size: var(--text_big);
+    line-height: var(--lh-small);
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
+.main__info a {
+    font-family: "Five Years Later", sans-serif;
+    font-size: var(--text_big);
+    line-height: var(--lh-small);
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
 
 .main__description.normal__variation {
     font-size: 1rem;
@@ -449,17 +525,7 @@ body.no-overflow {
 }
 
 .main__info {
-    background-color: #10BEC9;
-    padding: 20px 52px;
-    margin: 0;
-    color: #000E17;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
 
-.main__info a {
-    color: currentColor;
 }
 
 .section {
@@ -475,13 +541,12 @@ body.no-overflow {
 }
 
 .section__description {
-    font-size: 20px;
-    font-family: Roboto;
-    font-weight: 400;
+    font-size: var(--text_base);
+    line-height: var(--lh-regular);
     text-align: center;
-    max-width: 680px;
-    margin-bottom: 40px;
-    color: #B2B8BC;
+    max-width: 600px;
+    color: var(--gray-lightest);
+    margin: 0 auto;
 }
 
 .section__column {
@@ -499,23 +564,25 @@ body.no-overflow {
     grid-template-rows: auto 1fr;
     margin-bottom: 80px;
     overflow-x: scroll;
+    border-top: 2px solid white;
 }
 
 .partners__list dt {
+    Font-family: "Five Years Later", sans-serif;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     min-width: 300px;
-    border-top: 2px solid #B2B8BC;
-    padding: 44px 190px 44px 0;
-    font-size: 40px;
-    color: #000E17;
+    border-bottom: 2px solid white;
+    font-size: var(--text_big);
+    line-height: var(--lh-small);
+    color: white;
     text-transform: uppercase;
 }
 
 .partners__list dd {
-    border-top: 2px solid #B2B8BC;
-    padding: 44px 0;
+    border-bottom: 2px solid white;
+    padding: 20px 0;
     margin: 0;
     display: flex;
     flex-flow: column;
@@ -533,10 +600,7 @@ body.no-overflow {
 .partners__contact {
     display: flex;
     flex-direction: column;
-    background: var(--primary);
-    border-radius: 40px;
-    padding: 40px 20px;
-    max-width: 660px;
+    margin: 80px 0;
 }
 
 .partners__contact-title {
@@ -565,7 +629,7 @@ body.no-overflow {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 40px;
+    padding: 20px;
     background-color: var(--gray-darkest);
     font-family: 'Roboto', sans-serif;
 }
@@ -707,15 +771,16 @@ a.twitter-follow-button {
 .location__address {
     width: 100%;
     text-align: center;
-    font-family: Roboto;
-    font-size: 19px;
-    font-weight: 400;
-    color: #B2B8BC;
-    line-height: 150%;
+    font-size: var(--text_base);
+    line-height: var(--lh-regular);
+    color: var(--gray-lightest);
+    margin-top: 30px;
 }
 
-.location__address b {
+.location__address span {
     color: #fff;
+    font-weight: bold;
+    margin: 0 5px;
 }
 
 .location__address-title {
@@ -728,6 +793,10 @@ a.twitter-follow-button {
 
 @media all and (min-width: 480px) {
 
+    .title {
+        font-size: var(--text_huge);
+    }
+
     .section {
         padding: 80px 40px;
     }
@@ -737,12 +806,27 @@ a.twitter-follow-button {
     .card {
         flex-direction: row;
     }
+    .main__description,
+    .main__info a {
+        font-size: var(--text_bigger);
+    }
 }
 
-@media all and (min-width: 980px) {
-
+@media all and (min-width: 1000px) {
+    .header__hero {
+        margin: 40px 0;
+    }
+    .header__date {
+        font-size: var(--text_biggest);
+    }
+    #intro {
+        min-height: 80vh;
+    }
+    .section__header {
+        margin-bottom: 60px;
+    }
     .section {
-        padding: 120px 80px;
+        padding: 80px 60px;
     }
     .header {
         padding: 0 80px;
@@ -755,7 +839,7 @@ a.twitter-follow-button {
         grid-template-columns: 1fr 1fr;
     }
     .help__ukraine img {
-        width: 40px;
+        width: 45px;
     }
     .card {
         flex-direction: row;
@@ -804,8 +888,7 @@ a.twitter-follow-button {
     }
 
     .partners__list dd {
-        border-top: 2px solid #B2B8BC;
-        padding: 44px 0;
+        padding: 20px 0;
         margin: 0;
         display: flex;
         justify-content: space-between;
@@ -813,10 +896,6 @@ a.twitter-follow-button {
         flex-grow: 1;
         flex-direction: row;
         gap: 70px;
-    }
-
-    .nav__item {
-        font-size: 1.125rem;
     }
 
     .nav__close-button {
@@ -832,12 +911,12 @@ a.twitter-follow-button {
     }
 
     .main__info {
-        font-family: "Five Years Later", sans-serif;
         font-size: var(--text_big);
-        line-height: 1em;
+        margin-bottom: 0;
     }
 
-    .main__description {
+    .main__description,
+    .main__info a {
         font-size: var(--text_biggest);
     }
 
@@ -845,7 +924,7 @@ a.twitter-follow-button {
     }
 
     .partners-section {
-        padding: 80px 120px 40px 120px;
+        padding: 80px 60px;
         font-family: Roboto;
     }
 
