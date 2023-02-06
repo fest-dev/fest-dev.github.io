@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__date {
     font-family: "Five Years Later", sans-serif;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--secondary);
     margin: 0 0 10px;
 }
@@ -702,7 +702,15 @@ a.twitter-follow-button {
     .header__text {
         font-size: var(--text_big);
         color: var(--primary);
-        
+
+    }
+
+    .header__date {
+        font-family: "Five Years Later", sans-serif;
+        text-transform: uppercase;
+        font-size: 40px;
+        color: var(--secondary);
+        margin: 0 0 10px;
     }
 
     .nav__button {
