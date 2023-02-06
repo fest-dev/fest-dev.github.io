@@ -46,5 +46,6 @@ export const config = {
         'aboutPage',
         'footer',
         'infoPartners',
+        'goldPartners',
     ],
 }

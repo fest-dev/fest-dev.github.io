@@ -108,18 +108,14 @@
         <p class="section__description">Here are the coolest Partners that are making this festival possible.</p>
 
          <dl class="partners__list">
-             <!-- <dt>Gold</dt>
+              <dt>Gold</dt>
               <dd>
-                  <a href="https://google.com">
-                      <img src="./assets/images/partner-logo.png" alt="Partner logo">
-                  </a>
-                  <a href="https://google.com">
-                      <img src="./assets/images/partner-logo.png" alt="Partner logo">
-                  </a>
-                  <a href="https://google.com">
-                      <img src="./assets/images/partner-logo.png" alt="Partner logo">
-                  </a>
-              </dd> -->
+                  {{#goldPartners}}
+                      <a href="{{link}}" target="_blank">
+                          <img src="https:{{{logo.fields.file.url}}}" alt="{{title}}"/>
+                      </a>
+                  {{/goldPartners}}
+              </dd>
               <dt>Info Partners</dt>
               <dd>
                   {{#infoPartners}}
