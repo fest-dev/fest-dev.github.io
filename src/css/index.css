@@ -464,7 +464,6 @@ body.no-overflow {
 .nav__item {
     color: #fff;
     text-transform: uppercase;
-    padding: 0 0 2px;
     border-bottom: 2px solid var(--primary);
 }
 
@@ -598,31 +597,35 @@ body.no-overflow {
 }
 
 .partners__contact {
-    display: flex;
+    color: #fff;
+    border-radius: 25px;
     flex-direction: column;
     margin: 80px 0;
+    padding: 30px 50px;
+    display: flex;
+    background: rgb(0,55,77);
+    background: linear-gradient(57deg, rgba(0,55,77,1) 0%, rgba(22,55,115,1) 47%, rgba(94,30,126,1) 100%);
 }
 
 .partners__contact-title {
-    font-family: "Five Years Later", sans-serif;
     color: var(--primary);
-    font-size: var(--text_base);
-    margin: 0 0 10px 0;
+    font-family: "Five Years Later", sans-serif;
+    font-size: var(--text_big);
     text-align: center;
     text-transform: uppercase;
+    margin: 0 0 8px;
 }
 
 .partners__contact-text {
-    color: #B2B8BC;
-    font-size: 20px;
-    margin: 0;
     text-align: center;
-    font-family: Roboto;
+    margin: 0;
+    font-size: var(--text_base);
 }
 
 .partners__contact-text a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    border-bottom: 2px dashed var(--primary);
 }
 
 .footer {
@@ -780,7 +783,7 @@ a.twitter-follow-button {
 .location__address span {
     color: #fff;
     font-weight: bold;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 
 .location__address-title {
@@ -929,7 +932,7 @@ a.twitter-follow-button {
     }
 
     .partners__contact-title {
-        font-size: var(--text_bigger);
+        font-size: var(--text_big);
     }
 
     .modal__personal {
