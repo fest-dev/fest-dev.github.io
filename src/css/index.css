@@ -101,8 +101,8 @@ p {
 
 .header__hero,
 .main__description,
-#speakers .row, 
-#organizers .row, 
+#speakers .row,
+#organizers .row,
 .partners__list,
 .section__header,
 #map,
@@ -135,7 +135,7 @@ address {
 
 
 button {
-    font-family: "Five Years Later", sans-serif;    
+    font-family: "Five Years Later", sans-serif;
 }
 
 .card {
@@ -857,7 +857,16 @@ a.twitter-follow-button {
 
     .header__text {
         font-size: var(--text_big);
-        color: var(--primary);   
+        color: var(--primary);
+
+    }
+
+    .header__date {
+        font-family: "Five Years Later", sans-serif;
+        text-transform: uppercase;
+        font-size: 40px;
+        color: var(--secondary);
+        margin: 0 0 10px;
     }
     .nav__button {
         display: none;
