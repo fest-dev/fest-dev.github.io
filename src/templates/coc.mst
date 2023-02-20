@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets//favicon-16x16.png"/>
     <meta name="theme-color" content="#10BEC9"/>
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
+    <meta name="facebook-domain-verification" content="djcgq6ee58mipyffn4cualbcelesut" />
     <base href="{{{meta.host}}}"/>
 </head>
 <body>
