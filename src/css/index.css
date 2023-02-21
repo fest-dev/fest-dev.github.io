@@ -406,6 +406,11 @@ body.no-overflow {
     padding: 20px 20px;
 }
 
+.nav__link-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
 .nav--sticky {
     width: 100%;
     z-index: 100;
@@ -439,8 +444,8 @@ body.no-overflow {
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    gap: 70px;
-    padding: 15vh 0 0 0;
+    gap: 50px;
+    padding: 120px 0 0 0;
     margin: 0;
     transform: translate(99999px);
     background: var(--gray-darkest);
@@ -853,7 +858,7 @@ a.twitter-follow-button {
     }
     .header__text {
         font-size: var(--text_big);
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
     #speakers .row,
     #organizers .row {
@@ -876,6 +881,7 @@ a.twitter-follow-button {
         display: block;
         position: absolute;
         top: 24px;
+        left: 20px;
         opacity: 1;
     }
 
@@ -904,7 +910,7 @@ a.twitter-follow-button {
 
     .nav__get-tickets {
         order: 2;
-        margin: 0;
+        margin-left: 30px;
     }
     .nav__get-tickets.mobile {
         display: none;
