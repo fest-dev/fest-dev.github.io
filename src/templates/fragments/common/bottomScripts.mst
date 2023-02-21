@@ -27,22 +27,6 @@ window.EBWidgets.createWidget({
     onOrderComplete: exampleCallback
 });
 </script>
-
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-<script type="text/javascript">
-var exampleCallback = function() {
-    console.log('Order complete!');
-};
-
-window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: '497907343267',
-    modal: true,
-    modalTriggerElementId: 'eventbrite-widget-modal-trigger-497907343267',
-    onOrderComplete: exampleCallback
-});
-</script>
         <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
