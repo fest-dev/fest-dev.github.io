@@ -118,4 +118,52 @@ function initMap() {
 
 }
 
+function waitForElementById(elementId, callback, intervalMs) {
+    const interval = setInterval(function() {
+        const element = document.getElementById(elementId);
+        if (element) {
+            clearInterval(interval);
+            callback(element);
+        }
+    }, intervalMs);
+}
+
+function observeCssProperty(element, property, callback) {
+    const propToObserve = 'opacity';
+    let prevValue = element.style[propToObserve];
+
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+            if (mutation.attributeName === property) {
+                const newValue = element.style[propToObserve];
+                if(newValue !== prevValue) {
+                    prevValue = newValue;
+                    callback(newValue);
+                }
+            }
+        });
+    });
+
+    observer.observe(element, { attributes: true });
+
+    return observer;
+}
+
+function evbFix() {
+    window.addEventListener("load", (event) => {
+        waitForElementById('eventbrite-widget-modal-overlay', function() {
+            observeCssProperty(document.getElementById('eventbrite-widget-modal-overlay'),
+                'style',
+                function(value) {
+                    if(value === 0) {
+                        document.body.removeAttribute('style');
+                    }
+                });
+        });
+    });
+}
+
+evbFix();
+
+
 window.initMap = initMap;
