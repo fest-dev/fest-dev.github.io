@@ -1,7 +1,13 @@
 @font-face {
-    font-family: "Five Years Later";
-    src: url('../assets/fonts/five-years-later-regular.otf') format("opentype");
+    font-family: "Antonio";
+    src: url('../assets/fonts/Antonio-Medium.woff') format("opentype");
 }
+
+@font-face {
+    font-family: "Antonio Light";
+    src: url('../assets/fonts/Antonio-Light.woff') format("opentype");
+}
+
 @font-face {
     font-family: "Roboto";
     src: url('../assets/fonts/Roboto-Regular.ttf') format("opentype");
@@ -37,10 +43,10 @@
     /*type sizes*/
 	--text_small: 15px;
 	--text_base: 18px;
-	--text_big: 22px;
-    --text_bigger: 28px;
-	--text_biggest: 36px;
-    --text_huge: 72px;
+	--text_big: 24px;
+    --text_bigger: 32px;
+	--text_biggest: 48px;
+    --text_huge: 80px;
 
     /*line heights*/
     --lh-compact: 1em;
@@ -99,7 +105,6 @@ p {
     margin: 0 0 20px 0;
 }
 
-.header__hero,
 .main__description,
 #speakers .row,
 #organizers .row,
@@ -135,7 +140,7 @@ address {
 
 
 button {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
 }
 
 .card {
@@ -162,7 +167,7 @@ button {
 }
 
 .card__title {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     margin: 0 0 20px 0;
     font-size: var(--text_bigger);
     text-transform: uppercase;
@@ -237,7 +242,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     line-height: var(--lh-compact);
@@ -257,38 +262,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__hero {
-    margin: 40px 0 20px;
+    margin: 110px 0 20px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .header__text {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: var(--text_base);
     line-height: var(--lh-small);
-    color: var(--primary);
-    margin: 0;
+    color: white;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .25em;
-    margin: 0 0 40px;
+    margin: 0 0 60px;
 }
 .header__date {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     text-transform: uppercase;
     font-size: var(--text_bigger);
-    color: var(--secondary);
-    margin: 0 0 10px;
+    letter-spacing: .02em;
+    color: white;
+    margin: 0 0 20px;
     text-align: center;
 }
 
 .header__location {
-    font-family: "Five Years Later", sans-serif;
-    font-size: var(--text_small);
+    font-family: "Antonio", sans-serif;
+    font-size: var(--text_base);
     text-transform: uppercase;
+    letter-spacing: .02em;
     color: white;
     text-decoration: none;
     display: flex;
-    align-items: self-end;
+    align-items: center;
     margin-bottom: 40px;
+    position: relative;
 }
 .header__location::after {
     content: '';
@@ -296,8 +303,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 24px;
     background: url('../assets/images/location.svg');
     background-repeat: no-repeat;
+    position: absolute;
+    right: -26px;
     display: inline-block;
-    margin-left: 5px;
 }
 
 
@@ -386,7 +394,7 @@ body.no-overflow {
 }
 
 .nav {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     font-size: var(--text_small);
     text-transform: uppercase;
     display: flex;
@@ -495,7 +503,7 @@ body.no-overflow {
 }
 
 .main__description {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     color: #fff;
     font-size: var(--text_big);
     line-height: var(--lh-small);
@@ -503,7 +511,7 @@ body.no-overflow {
     margin-bottom: 30px;
 }
 .main__info a {
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     font-size: var(--text_big);
     line-height: var(--lh-small);
     color: var(--primary);
@@ -522,10 +530,6 @@ body.no-overflow {
     text-transform: uppercase;
     padding: 0 20px;
     margin: 20px auto;
-}
-
-.main__info {
-
 }
 
 .section {
@@ -568,7 +572,7 @@ body.no-overflow {
 }
 
 .partners__list dt {
-    Font-family: "Five Years Later", sans-serif;
+    Font-family: "Antonio", sans-serif;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -610,7 +614,7 @@ body.no-overflow {
 
 .partners__contact-title {
     color: var(--primary);
-    font-family: "Five Years Later", sans-serif;
+    font-family: "Antonio", sans-serif;
     font-size: var(--text_big);
     text-align: center;
     text-transform: uppercase;
@@ -818,7 +822,7 @@ a.twitter-follow-button {
 
 @media all and (min-width: 1000px) {
     .header__hero {
-        margin: 40px 0;
+        margin-bottom: 40px;
     }
     .header__date {
         font-size: var(--text_biggest);
@@ -836,6 +840,7 @@ a.twitter-follow-button {
         padding: 0 80px;
     }
     .header__text {
+        font-size: var(--text_big);
         margin-bottom: 80px;
     }
     #speakers .row,
@@ -858,16 +863,9 @@ a.twitter-follow-button {
 
     .header__text {
         font-size: var(--text_big);
-        color: var(--primary);
-
     }
-
     .header__date {
-        font-family: "Five Years Later", sans-serif;
-        text-transform: uppercase;
-        font-size: 40px;
-        color: var(--secondary);
-        margin: 0 0 10px;
+        font-family: "Antonio", sans-serif;
     }
     .nav__button {
         display: none;
@@ -931,9 +929,6 @@ a.twitter-follow-button {
     .main__description,
     .main__info a {
         font-size: var(--text_biggest);
-    }
-
-    .main__description.normal__variation {
     }
 
     .partners-section {
