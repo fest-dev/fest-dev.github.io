@@ -234,7 +234,7 @@ button {
 }
 
 .card__button-content {
-    margin-top: 4px;
+    margin-top: 0px;
 }
 
 
@@ -625,6 +625,7 @@ body.no-overflow {
     margin: 80px 0;
     padding: 30px 50px;
     display: flex;
+    width: 100%;
     background: rgb(0,55,77);
     background: linear-gradient(57deg, rgba(0,55,77,1) 0%, rgba(22,55,115,1) 47%, rgba(94,30,126,1) 100%);
 }
@@ -884,7 +885,20 @@ a.twitter-follow-button {
         left: 20px;
         opacity: 1;
     }
+    .nav {
+        font-family: "Antonio", sans-serif;
+        font-size: var(--text_big);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 15px 20px;
+    }
 
+    .partners__contact {
+        width: 50%;
+    }
 }
 
 @media all and (min-width: 1200px) {

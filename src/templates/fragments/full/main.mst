@@ -1,11 +1,10 @@
 <main class="main" id="main">
     <section class="section" id="intro">
         <p class="main__description">{{mainTextSection.mainTextSection}}</p>
-        <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
     </section>
 
     <section class="section" id="speakers">
-        <div class="section__header"> 
+        <div class="section__header">
             <h2 class="title">Speakers</h2>
         </div>
         <div class="row center-xs start-lg">
@@ -68,7 +67,7 @@
     </section>
 
     <section class="section location" id="location">
-        <div class="section__header"> 
+        <div class="section__header">
             <h2 class="title">The Venue</h2>
             <p class="section__description">Right in the heart of old town Porto, with the most beautiful river view, the Alfândega do Porto will surely make this day unforgettable.</p>
         </div>
@@ -99,11 +98,11 @@
     </section>
 
     <section class="section section--inverted partners-section" id="partners">
-        
+
         <div class="section__header">
             <!-- <h2 class="title">Meet the Partners</h2>
             <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p> -->
-            
+
             <h2 class="title">Our Partners</h2>
             <p class="section__description">Here are the coolest Partners that are making this festival possible.</p>
         </div>
