@@ -885,16 +885,6 @@ a.twitter-follow-button {
         left: 20px;
         opacity: 1;
     }
-    .nav {
-        font-family: "Antonio", sans-serif;
-        font-size: var(--text_big);
-        text-transform: uppercase;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        padding: 15px 20px;
-    }
 
     .partners__contact {
         width: 50%;
