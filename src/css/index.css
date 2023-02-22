@@ -47,7 +47,7 @@
 	--text_big: 24px;
     --text_bigger: 32px;
 	--text_biggest: 48px;
-    --text_huge: 80px;
+    --text_huge: 90px;
 
     /*line heights*/
     --lh-compact: 1em;
@@ -134,14 +134,14 @@ address {
 #organizers .row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 100px;
+    grid-column-gap: 60px;
     grid-row-gap: 100px;
     margin: 40px 0;
 }
 
 
 button {
-    font-family: "Antonio", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .card {
@@ -160,6 +160,7 @@ button {
 .card__illustration {
     border-radius: 40px;
     width: 140px;
+    align-self: center;
 }
 
 .card__content {
@@ -169,25 +170,29 @@ button {
 
 .card__title {
     font-family: "Antonio", sans-serif;
-    margin: 0 0 20px 0;
-    font-size: var(--text_bigger);
+    margin: 0 0 10px 0;
+    font-size: var(--text_big);
     text-transform: uppercase;
     text-align: left;
+    order: 2;
 }
 
 .card__description {
-    margin: 0 0 20px 0;
-    font-size: var(--text_base);
-    line-height: var(--lh-regular);
-    color: var(--gray-lightest);
+    font-size: var(--text_bigger);
+    line-height: var(--lh-small);
     text-align: left;
+    margin: 0 0 20px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    order: 1;
 }
 
 .card__position {
     margin: 0 0 20px 0;
-    font-size: var(--text_base);
-    color: var(--gray-lightest);
+    font-size: var(--text_small);
     text-align: left;
+    Order: 3;
 }
 
 .card__description.organizer__variation {
@@ -212,16 +217,16 @@ button {
     border: none;
     color: white;
     background-color: rgba(255,255,255,.2);
-    border-radius: 10px;
-    padding: 4px 12px;
+    border-radius: 6px;
+    padding: 8px 12px;
     font-size: var(--text_small);
-    text-transform: uppercase;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: flex-start;
     gap: 8px;
+    order: 4;
 }
 
 .card__more-button:hover {
@@ -235,6 +240,13 @@ button {
 
 .card__button-content {
     margin-top: 0px;
+}
+
+.card__description.organizer__variation {
+    order: 2;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--text_base);
+    line-height: var(--lh-regular);
 }
 
 
@@ -364,7 +376,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: #000E17;
+    background-color: var(--gray-darkest);
+    color: white;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -382,9 +395,9 @@ body.no-overflow {
 }
 
 .title {
-    font-size: var(--text_biggest);
+    font-size: 56px;
+    letter-spacing: .02em;
     line-height: var(--lh-compact);
-    color: var(--primary);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
@@ -451,7 +464,7 @@ body.no-overflow {
     background: var(--gray-darkest);
 }
 
-.nav__get-tickets {
+nav a.nav__get-tickets {
     color: var(--gray-darkest);
     background: var(--primary);
     cursor: pointer;
@@ -465,14 +478,6 @@ body.no-overflow {
 }
 .nav__get-tickets:hover {
     background-color: var(--primary-hover)
-}
-
-.nav__get-tickets.mobile {
-    display: block;
-}
-
-.nav__get-tickets.desktop {
-    display: none;
 }
 
 .animate-visible {
@@ -520,12 +525,13 @@ body.no-overflow {
 }
 
 .main__description {
-    font-family: "Antonio", sans-serif;
+    font-family: "Antonio Light", sans-serif;
     color: #fff;
-    font-size: var(--text_big);
+    font-size: var(--text_bigger);
     line-height: var(--lh-small);
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 .main__info a {
     font-family: "Antonio", sans-serif;
@@ -832,13 +838,19 @@ a.twitter-follow-button {
     .card {
         flex-direction: row;
     }
+
+    .card__illustration {
+        align-self: flex-start;
+    }
+
     .main__description,
     .main__info a {
         font-size: var(--text_bigger);
     }
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 900px) {
+    
     .header__hero {
         margin-bottom: 40px;
     }
@@ -846,7 +858,7 @@ a.twitter-follow-button {
         font-size: var(--text_biggest);
     }
     #intro {
-        min-height: 80vh;
+        min-height: 70vh;
     }
     .section__header {
         margin-bottom: 60px;
@@ -870,6 +882,10 @@ a.twitter-follow-button {
         width: 45px;
     }
 
+    .main__description {
+        font-size: var(--text_biggest);
+    }
+
     .card {
         flex-direction: row;
     }
@@ -884,16 +900,6 @@ a.twitter-follow-button {
         top: 24px;
         left: 20px;
         opacity: 1;
-    }
-    .nav {
-        font-family: "Antonio", sans-serif;
-        font-size: var(--text_big);
-        text-transform: uppercase;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        padding: 15px 20px;
     }
 
     .partners__contact {
@@ -925,13 +931,6 @@ a.twitter-follow-button {
     .nav__get-tickets {
         order: 2;
         margin-left: 30px;
-    }
-    .nav__get-tickets.mobile {
-        display: none;
-    }
-    .nav__get-tickets.desktop {
-        display: block;
-        margin-left: 6px;
     }
 
     .nav__list {
@@ -987,6 +986,11 @@ a.twitter-follow-button {
     .main__description,
     .main__info a {
         font-size: var(--text_biggest);
+    }
+
+    #speakers .row,
+    #organizers .row {
+        grid-column-gap: 80px;
     }
 
     .partners-section {
