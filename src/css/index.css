@@ -134,14 +134,14 @@ address {
 #organizers .row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 100px;
+    grid-column-gap: 60px;
     grid-row-gap: 100px;
     margin: 40px 0;
 }
 
 
 button {
-    font-family: "Antonio", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .card {
@@ -160,6 +160,7 @@ button {
 .card__illustration {
     border-radius: 40px;
     width: 140px;
+    align-self: center;
 }
 
 .card__content {
@@ -169,25 +170,29 @@ button {
 
 .card__title {
     font-family: "Antonio", sans-serif;
-    margin: 0 0 20px 0;
-    font-size: var(--text_bigger);
+    margin: 0 0 10px 0;
+    font-size: var(--text_big);
     text-transform: uppercase;
     text-align: left;
+    order: 2;
 }
 
 .card__description {
-    margin: 0 0 20px 0;
-    font-size: var(--text_base);
-    line-height: var(--lh-regular);
-    color: var(--gray-lightest);
+    font-size: var(--text_bigger);
+    line-height: var(--lh-small);
     text-align: left;
+    margin: 0 0 20px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    order: 1;
 }
 
 .card__position {
     margin: 0 0 20px 0;
-    font-size: var(--text_base);
-    color: var(--gray-lightest);
+    font-size: var(--text_small);
     text-align: left;
+    Order: 3;
 }
 
 .card__description.organizer__variation {
@@ -212,16 +217,16 @@ button {
     border: none;
     color: white;
     background-color: rgba(255,255,255,.2);
-    border-radius: 10px;
-    padding: 4px 12px;
+    border-radius: 6px;
+    padding: 8px 12px;
     font-size: var(--text_small);
-    text-transform: uppercase;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: flex-start;
     gap: 8px;
+    order: 4;
 }
 
 .card__more-button:hover {
@@ -235,6 +240,13 @@ button {
 
 .card__button-content {
     margin-top: 0px;
+}
+
+.card__description.organizer__variation {
+    order: 2;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--text_base);
+    line-height: var(--lh-regular);
 }
 
 
@@ -826,6 +838,11 @@ a.twitter-follow-button {
     .card {
         flex-direction: row;
     }
+
+    .card__illustration {
+        align-self: flex-start;
+    }
+
     .main__description,
     .main__info a {
         font-size: var(--text_bigger);
@@ -969,6 +986,11 @@ a.twitter-follow-button {
     .main__description,
     .main__info a {
         font-size: var(--text_biggest);
+    }
+
+    #speakers .row,
+    #organizers .row {
+        grid-column-gap: 80px;
     }
 
     .partners-section {
