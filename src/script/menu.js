@@ -25,6 +25,11 @@ export const enableMobileMenu = () => {
     closeButton.addEventListener('click', handleClose);
     navLinks.forEach((link) => {
         link.addEventListener('click', (e) => {
+            gtag('event', 'click', {
+                'event_category': 'Menu',
+                'event_label': 'Open',
+                'value': 1
+            });
             if(!isDesktop && navList.classList.contains('animate-hidden')) {
                 return e.preventDefault();
             }

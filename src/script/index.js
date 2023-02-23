@@ -165,5 +165,4 @@ function evbFix() {
 
 evbFix();
 
-
 window.initMap = initMap;
