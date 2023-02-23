@@ -434,7 +434,7 @@ body.no-overflow {
     backdrop-filter: blur(12px);
 }
 
-.nav__logo {   
+.nav__logo {
     display: none;
     height: 26px;
 }
@@ -543,8 +543,12 @@ nav a.nav__get-tickets {
 }
 
 
+.main__description.normal__variation a {
+    color: var(--primary);
+}
+
 .main__description.normal__variation {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .partners__invitation {
@@ -670,6 +674,10 @@ nav a.nav__get-tickets {
     font-size: 1rem;
     color: var(--gray-lightest);
     margin: 0;
+}
+
+.footer__copyright a {
+    color: var(--gray-lightest);
 }
 
 a.twitter-follow-button {
@@ -850,7 +858,7 @@ a.twitter-follow-button {
 }
 
 @media all and (min-width: 900px) {
-    
+
     .header__hero {
         margin-bottom: 40px;
     }
@@ -912,7 +920,7 @@ a.twitter-follow-button {
     .nav {
         justify-content: center;
     }
-    
+
     .nav a {
         font-size: var(--text_base);
     }

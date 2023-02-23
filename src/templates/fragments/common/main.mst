@@ -1,7 +1,5 @@
 <main class="main" id="main">
-    <p class="main__description normal__variation">{{codeOfConduct.text}}</p>
-
-    <p class="main__info">{{infoLineSection.infoLineText}} <a href="{{infoLineSection.link}}">{{infoLineSection.infoLineLinkText}}</a></p>
+    <div class="main__description normal__variation">{{{codeOfConduct.text}}}</div>
 
     <section class="section section--inverted" id="organizers">
         <h2 class="title title--inverted">Who's behind it?</h2>
@@ -22,12 +20,4 @@
         </div>
     </section>
 
-    <section class="section section--inverted partners-section" id="partners">
-        <h2 class="title title--inverted">Meet the Partners</h2>
-        <p class="partners__invitation" >{{partnerWelcomeMessage.title}}</p>
-
-        <!--
-            <img src="./path.png" alt="" />
-        -->
-    </section>
 </main>
