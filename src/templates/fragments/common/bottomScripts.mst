@@ -44,3 +44,14 @@ fbq('track', 'PageView');
                src="https://www.facebook.com/tr?id=9029646587076042&ev=PageView&noscript=1"
 /></noscript>
         <!-- End Meta Pixel Code -->
+<script>
+window.addEventListener('load', function() {
+    document.getElementById('eventbrite-widget-modal-trigger-497907343267').addEventListener('click', function() {
+        gtag('event', 'click', {
+            'event_category': 'Tickets',
+            'event_label': 'Open',
+            'value': 1
+        });
+    });
+});
+</script>

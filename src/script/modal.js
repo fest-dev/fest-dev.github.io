@@ -8,6 +8,11 @@ const openModal = (e) => {
     modal.classList.remove('animate-hidden');
     modal.removeAttribute('aria-hidden');
     document.body.classList.add('no-overflow');
+    gtag('event', 'click', {
+        'event_category': 'Modal',
+        'event_label': 'Open',
+        'value': 1
+    });
 }
 
 const closeModal = (e) => {
