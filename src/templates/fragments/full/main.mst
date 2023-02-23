@@ -20,7 +20,7 @@
 
                         <div class="card__links-wrapper">
                             {{#tags}}
-                            <a href="#" class="card__hashtag">#{{.}}</a>
+                            <span class="card__hashtag">#{{.}}</span>
                             {{/tags}}
                         </div>
 
@@ -45,7 +45,7 @@
                             <div class="modal__technologies">
                                 <p class="modal__section-title">
                                     {{#tags}}
-                                    <a href="#" class="card__hashtag">#{{.}}</a>
+                                    <span class="card__hashtag">#{{.}}</span>
                                     {{/tags}}
                                 </p>
                                 <p class="modal__description text-center">{{theme}}</p>

@@ -1,5 +1,6 @@
 import contentful from 'contentful';
 import Mustache from 'mustache';
+import { marked } from 'marked';
 import { readFileSync, writeFileSync } from 'fs';
 import { readFile as readFilePromise } from 'fs/promises';
 import { config } from './config/config.mjs';
@@ -27,6 +28,10 @@ export const csm = async ({accessToken, space, env}) => {
         const acceptItem = contentTypes.includes(item.sys.contentType.sys.id);
 
         if(acceptItem) {
+            if(item.sys.contentType.sys.id === 'codeOfConduct') {
+                item.fields.text = marked.parse(item.fields.text);
+            }
+
             if(!acc[item.sys.contentType.sys.id]) {
                 acc[item.sys.contentType.sys.id] = item.fields;
             } else if(Array.isArray(acc[item.sys.contentType.sys.id])) {
@@ -37,6 +42,8 @@ export const csm = async ({accessToken, space, env}) => {
         }
         return acc;
     }, {});
+
+    console.log(content);
 
     entryPoints.forEach((entryPoint) => {
         const template = readFileSync(entryPoint.input, 'utf8');
@@ -52,8 +59,6 @@ export const csm = async ({accessToken, space, env}) => {
 
         writeFileSync(entryPoint.output, output);
     });
-
-
 
     return entryPoints.map(item => item.output);
 }
