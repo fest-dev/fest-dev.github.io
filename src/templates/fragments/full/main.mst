@@ -115,6 +115,14 @@
                       </a>
                   {{/goldPartners}}
               </dd>
+             <dt>Silver</dt>
+             <dd>
+                 {{#silverPartners}}
+                 <a href="{{link}}" target="_blank">
+                     <img src="https:{{{logo.fields.file.url}}}" alt="{{title}}"/>
+                 </a>
+                 {{/silverPartners}}
+             </dd>
               <dt>Info Partners</dt>
               <dd>
                   {{#infoPartners}}

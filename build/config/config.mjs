@@ -47,5 +47,6 @@ export const config = {
         'footer',
         'infoPartners',
         'goldPartners',
+        'silverPartners',
     ],
 }
