@@ -687,7 +687,7 @@ a.twitter-follow-button {
     max-height: calc(100% - 200px);
     overflow-y: scroll;
     max-width: 840px;
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     padding: 20px;
