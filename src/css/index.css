@@ -696,7 +696,13 @@ a.twitter-follow-button {
     background: #fff;
     border-radius: 40px;
     border: 20px solid #061B29;
-    transform: translate(99999px);
+}
+
+.modal.animate-visible {
+    display: flex;
+}
+.modal.animate-hidden {
+    display: none;
 }
 
 .modal__personal {
