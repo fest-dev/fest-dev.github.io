@@ -335,40 +335,29 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes fadeOut {
     0% {
         opacity: 1;
-        transform: translate(var(--transition-end-position-x), var(--transition-end-position-y));
     }
 
    90% {
         opacity: 0;
-        transform: translate(var(--transition-end-position-x), var(--transition-end-position-y));
    }
 
    100% {
         opacity: 0;
-        transform: translate(99999px);
    }
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translate(99999px);
     }
 
    10% {
         opacity: 0;
-        transform: translate(var(--transition-end-position-x), var(--transition-end-position-y));
    }
 
    100% {
         opacity: 1;
-        transform: translate(var(--transition-end-position-x), var(--transition-end-position-y));
    }
-}
-
-:root {
-    --transition-end-position-x: 0;
-    --transition-end-position-y: 0;
 }
 
 * {
