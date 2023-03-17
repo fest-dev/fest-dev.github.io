@@ -680,9 +680,6 @@ a.twitter-follow-button {
 }
 
 .modal {
-    --transition-end-position-x: -50%;
-    --transition-end-position-y: -50%;
-
     width: calc(100% - 32px);
     max-height: calc(100% - 200px);
     overflow-y: scroll;
@@ -696,6 +693,7 @@ a.twitter-follow-button {
     background: #fff;
     border-radius: 40px;
     border: 20px solid #061B29;
+    transform: translate(-50%, -50%);
 }
 
 .modal.animate-visible {
