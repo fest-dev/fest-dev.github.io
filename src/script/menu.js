@@ -50,7 +50,9 @@ export const enableMobileMenu = () => {
                 document.querySelector(link.hash).scrollIntoView({ block: 'start', behavior: 'smooth' });
             }
 
-            handleClose();
+            if (!isDesktop) {
+                handleClose();
+            }
         });
     });
 }
