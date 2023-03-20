@@ -130,7 +130,15 @@
                           <img src="https:{{{logo.fields.file.url}}}" alt="{{title}}"/>
                       </a>
                   {{/infoPartners}}
-            </dd>
+              </dd>
+             <dt>Media Partners</dt>
+             <dd>
+                 {{#mediaPartners}}
+                 <a href="{{link}}" target="_blank">
+                     <img src="https:{{{logo.fields.file.url}}}" alt="{{title}}"/>
+                 </a>
+                 {{/mediaPartners}}
+             </dd>
         </dl>
 
         <div class="partners__contact">

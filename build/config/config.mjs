@@ -48,5 +48,6 @@ export const config = {
         'infoPartners',
         'goldPartners',
         'silverPartners',
+        'mediaPartners',
     ],
 }
