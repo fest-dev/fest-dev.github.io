@@ -470,6 +470,7 @@ nav a.nav__get-tickets {
     flex-shrink: 0;
     padding: 10px 12px;
     order: 1;
+    z-index: 9999;
 }
 .nav__get-tickets:hover {
     background-color: var(--primary-hover)
