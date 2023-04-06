@@ -61,5 +61,6 @@ export const config = {
         'goldPartners',
         'silverPartners',
         'mediaPartners',
+        'platinumPartners',
     ],
 }

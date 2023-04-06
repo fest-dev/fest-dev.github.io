@@ -107,6 +107,14 @@
             <p class="section__description">Here are the coolest Partners that are making this festival possible.</p>
         </div>
          <dl class="partners__list">
+             <dt>Platinum</dt>
+             <dd>
+                 {{#platinumPartners}}
+                 <a href="{{link}}" target="_blank">
+                     <img src="https:{{{logo.fields.file.url}}}" alt="{{title}}"/>
+                 </a>
+                 {{/platinumPartners}}
+             </dd>
               <dt>Gold</dt>
               <dd>
                   {{#goldPartners}}
