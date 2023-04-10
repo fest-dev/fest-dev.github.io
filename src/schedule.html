@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Development Festival - Code of Conduct"/>
+    <meta name="keywords" content="Development Festival, Frontend Conference,  Frontend Technology, Porto Conference, Porto Frontend, React Porto, Frontend Security"/>
+    <title>Development Festival - Code of Conduct</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets//favicon-16x16.png"/>
+    <meta name="theme-color" content="#10BEC9"/>
+    <link rel="stylesheet" href="./css/main.css" type="text/css"/>
+    <meta name="facebook-domain-verification" content="djcgq6ee58mipyffn4cualbcelesut" />
+    <base href="http://localhost:3000/"/>
+</head>
+<body>
+    <header id="header"></header>
+    <nav class="nav" id="nav">
+        <a href="/">
+            <img class="nav__logo" src="./assets/images/logo.svg" alt="Logo"/>
+        </a>
+        <button class="nav__button" id="mobile-nav-button">
+            <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2H48" stroke="#10BEC9" stroke-width="3"/>
+                <path d="M0 20H48" stroke="#10BEC9" stroke-width="3"/>
+            </svg>
+        </button>
+        <div class="nav__link-wrapper">
+            <ul class="nav__list" id="nav-list">
+                <li class="nav__item"><a href="#intro">About</a></li>
+                <li class="nav__item"><a href="#speakers">Speakers</a></li>
+                <li class="nav__item"><a href="#location">Venue</a></li>
+                <li class="nav__item"><a href="#organizers">Who&#39;s behind it?</a></li>
+                <li class="nav__item"><a href="#partners">Partners</a></li>
+                <button class="nav__close-button" aria-label="Close menu" id="close-button">
+                    <img src="./assets/images/close-icon.svg" alt="" />
+                </button>
+            </ul>
+            <a id="eventbrite-widget-modal-trigger-497907343267" target="_blank" rel="noreferrer" class="nav__get-tickets">Get Tickets</a>
+        </div>
+    </nav>
+    <div> You can add your own content here </div>
+    <footer class="footer">
+        <p class="footer__copyright">© 2023 Fest.Dev  |  Contact us admin@fest.dev | <a href = "https://fest.dev/coc.html">Code Of Conduct</a></p>
+    </footer>
+    <script src="./script/index.js" type="module"></script>
+            <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPD8P61H27"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LPD8P61H27');
+    </script>
+            <!-- Noscript content for added SEO -->
+    <noscript><a href="https://www.eventbrite.pt/e/frontend-conference-frontend-festival-porto-2023-tickets-497907343267" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+            <!-- You can customize this button any way you like -->
+
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '497907343267',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-497907343267',
+        onOrderComplete: exampleCallback
+    });
+    </script>
+            <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '9029646587076042');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=9029646587076042&ev=PageView&noscript=1"
+    /></noscript>
+            <!-- End Meta Pixel Code -->
+    <script>
+    window.addEventListener('load', function() {
+        document.getElementById('eventbrite-widget-modal-trigger-497907343267').addEventListener('click', function() {
+            gtag('event', 'click', {
+                'event_category': 'Tickets',
+                'event_label': 'Open',
+                'value': 1
+            });
+        });
+    });
+    </script>
+
+            <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+            <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "102330546120192");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+            <!-- Your SDK code -->
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v16.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>
