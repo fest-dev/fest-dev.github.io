@@ -40,6 +40,7 @@
     --gray-lightest: #B2B8BC;
     --gray:#465056;
     --gray-darkest: #000E17;
+    --gray-soft: #182833;
 
     /*type sizes*/
 	--text_small: 15px;
@@ -207,6 +208,7 @@ button {
 .card__description {
     font-size: var(--text_bigger);
     line-height: var(--lh-small);
+    color: var(--gray-lightest);
     margin: 0 0 20px;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
@@ -217,6 +219,7 @@ button {
 .card__position {
     margin: 0 0 20px 0;
     font-size: var(--text_small);
+    color: var(--gray-lightest);
     text-align: left;
     Order: 3;
 }
@@ -590,43 +593,39 @@ nav a.nav__get-tickets {
     padding: 80px 40px 40px 40px;
 }
 
-.partners__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    margin-bottom: 80px;
-    overflow-x: scroll;
-    border-top: 2px solid white;
-}
-
 .partners__list dt {
-    Font-family: "Antonio", sans-serif;
-    flex-shrink: 0;
+    font-family: "Antonio", sans-serif;
     display: flex;
     align-items: center;
     min-width: 300px;
-    border-bottom: 2px solid white;
-    font-size: var(--text_big);
+    font-size: var(--text_base);
     line-height: var(--lh-small);
-    color: white;
+    color: var(--gray-lightest);
     text-transform: uppercase;
+    letter-spacing: .02em;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.partners__list dt::before,
+.partners__list dt::after {
+    content:'';
+    display: inline-block;
+    height: 2px;
+    flex-grow: 1;
+    background-color: var(--gray-soft);
 }
 
 .partners__list dd {
-    border-bottom: 2px solid white;
-    padding: 20px 0;
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    gap: 70px;
+    margin-inline-start: 0;
 }
 
 .partners__list dd img {
-    width: 200px;
-    max-width: 200px;
+    max-width: 240px;
 }
 
 .partners__contact {
@@ -928,6 +927,10 @@ a.twitter-follow-button {
     .partners__contact {
         width: 50%;
     }
+    
+    .partners__list dt {
+        font-size: var(--text_big);
+    }
 }
 
 @media all and (min-width: 1200px) {
@@ -967,26 +970,6 @@ a.twitter-follow-button {
         z-index: 0;
         transform: translate(0);
         background: none;
-    }
-
-    .partners__list {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        grid-template-rows: 1fr;
-        width: 100%;
-        margin-bottom: 80px;
-        overflow-x: scroll;
-    }
-
-    .partners__list dd {
-        padding: 20px 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-        flex-direction: row;
-        gap: 70px;
     }
 
     .nav__close-button {
