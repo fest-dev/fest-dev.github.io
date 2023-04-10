@@ -145,11 +145,43 @@ button {
 }
 
 .card {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
     color: white;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.card__description,
+.card__position,
+.card__title {
+    text-align: center;
+}
+
+.card__more-button {
+    border: none;
+    color: white;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: var(--text_small);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    order: 4;
+}
+
+.card__more-button:hover {
+    background-color: rgba(255,255,255,.3);
 }
 
 .card--inverted {
@@ -161,11 +193,6 @@ button {
     border-radius: 40px;
     width: 140px;
     align-self: center;
-}
-
-.card__content {
-    display: flex;
-    flex-direction: column;
 }
 
 .card__title {
@@ -180,7 +207,6 @@ button {
 .card__description {
     font-size: var(--text_bigger);
     line-height: var(--lh-small);
-    text-align: left;
     margin: 0 0 20px;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
@@ -211,26 +237,6 @@ button {
     font-size: 1.125rem;
     text-transform: uppercase;
     word-break: break-word;
-}
-
-.card__more-button {
-    border: none;
-    color: white;
-    background-color: rgba(255,255,255,.2);
-    border-radius: 6px;
-    padding: 8px 12px;
-    font-size: var(--text_small);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-    gap: 8px;
-    order: 4;
-}
-
-.card__more-button:hover {
-    background-color: rgba(255,255,255,.3);
 }
 
 .card__more-button img {
@@ -386,10 +392,10 @@ body.no-overflow {
 .title {
     font-size: 56px;
     letter-spacing: .02em;
-    line-height: var(--lh-compact);
+    line-height: var(--lh-small);
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .title--inverted {
@@ -844,6 +850,16 @@ a.twitter-follow-button {
     }
     .card {
         flex-direction: row;
+        align-items: flex-start;
+    }
+    .card__content {
+        align-items: flex-start;
+    }
+    
+    .card__description,
+    .card__position,
+    .card__title {
+        text-align: left;
     }
 
     .card__illustration {
