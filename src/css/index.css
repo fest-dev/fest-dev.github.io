@@ -40,6 +40,7 @@
     --gray-lightest: #B2B8BC;
     --gray:#465056;
     --gray-darkest: #000E17;
+    --gray-soft: #182833;
 
     /*type sizes*/
 	--text_small: 15px;
@@ -145,11 +146,43 @@ button {
 }
 
 .card {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
     color: white;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.card__description,
+.card__position,
+.card__title {
+    text-align: center;
+}
+
+.card__more-button {
+    border: none;
+    color: white;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: var(--text_small);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    order: 4;
+}
+
+.card__more-button:hover {
+    background-color: rgba(255,255,255,.3);
 }
 
 .card--inverted {
@@ -161,11 +194,6 @@ button {
     border-radius: 40px;
     width: 140px;
     align-self: center;
-}
-
-.card__content {
-    display: flex;
-    flex-direction: column;
 }
 
 .card__title {
@@ -180,7 +208,6 @@ button {
 .card__description {
     font-size: var(--text_bigger);
     line-height: var(--lh-small);
-    text-align: left;
     margin: 0 0 20px;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
@@ -191,12 +218,14 @@ button {
 .card__position {
     margin: 0 0 20px 0;
     font-size: var(--text_small);
+    color: var(--gray-lightest);
     text-align: left;
     Order: 3;
 }
 
 .card__description.organizer__variation {
     text-transform: none;
+    color: var(--gray-lightest);
 }
 
 .card__links-wrapper {
@@ -211,26 +240,6 @@ button {
     font-size: 1.125rem;
     text-transform: uppercase;
     word-break: break-word;
-}
-
-.card__more-button {
-    border: none;
-    color: white;
-    background-color: rgba(255,255,255,.2);
-    border-radius: 6px;
-    padding: 8px 12px;
-    font-size: var(--text_small);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-    gap: 8px;
-    order: 4;
-}
-
-.card__more-button:hover {
-    background-color: rgba(255,255,255,.3);
 }
 
 .card__more-button img {
@@ -384,12 +393,14 @@ body.no-overflow {
 }
 
 .title {
+    font-family: "Antonio Light", sans-serif;
     font-size: 56px;
+    color: var(--primary);
     letter-spacing: .02em;
-    line-height: var(--lh-compact);
+    line-height: var(--lh-small);
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .title--inverted {
@@ -584,43 +595,39 @@ nav a.nav__get-tickets {
     padding: 80px 40px 40px 40px;
 }
 
-.partners__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    margin-bottom: 80px;
-    overflow-x: scroll;
-    border-top: 2px solid white;
-}
-
 .partners__list dt {
-    Font-family: "Antonio", sans-serif;
-    flex-shrink: 0;
+    font-family: "Antonio", sans-serif;
     display: flex;
     align-items: center;
     min-width: 300px;
-    border-bottom: 2px solid white;
-    font-size: var(--text_big);
+    font-size: var(--text_base);
     line-height: var(--lh-small);
-    color: white;
+    color: var(--gray-lightest);
     text-transform: uppercase;
+    letter-spacing: .02em;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.partners__list dt::before,
+.partners__list dt::after {
+    content:'';
+    display: inline-block;
+    height: 2px;
+    flex-grow: 1;
+    background-color: var(--gray-soft);
 }
 
 .partners__list dd {
-    border-bottom: 2px solid white;
-    padding: 20px 0;
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    gap: 70px;
+    margin-inline-start: 0;
 }
 
 .partners__list dd img {
-    width: 200px;
-    max-width: 200px;
+    max-width: 240px;
 }
 
 .partners__contact {
@@ -630,18 +637,16 @@ nav a.nav__get-tickets {
     margin: 80px 0;
     padding: 30px 50px;
     display: flex;
-    width: 100%;
     background: rgb(0,55,77);
     background: linear-gradient(57deg, rgba(0,55,77,1) 0%, rgba(22,55,115,1) 47%, rgba(94,30,126,1) 100%);
 }
 
 .partners__contact-title {
-    color: var(--primary);
-    font-family: "Antonio", sans-serif;
-    font-size: var(--text_big);
+    font-family: Antonio, sans-serif;
+    font-size: var(--text_bigger);
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 8px;
+    margin: 0 0 10px;
 }
 
 .partners__contact-text {
@@ -844,6 +849,16 @@ a.twitter-follow-button {
     }
     .card {
         flex-direction: row;
+        align-items: flex-start;
+    }
+    .card__content {
+        align-items: flex-start;
+    }
+    
+    .card__description,
+    .card__position,
+    .card__title {
+        text-align: left;
     }
 
     .card__illustration {
@@ -908,9 +923,9 @@ a.twitter-follow-button {
         left: 20px;
         opacity: 1;
     }
-
-    .partners__contact {
-        width: 50%;
+    
+    .partners__list dt {
+        font-size: var(--text_big);
     }
 }
 
@@ -951,26 +966,6 @@ a.twitter-follow-button {
         z-index: 0;
         transform: translate(0);
         background: none;
-    }
-
-    .partners__list {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        grid-template-rows: 1fr;
-        width: 100%;
-        margin-bottom: 80px;
-        overflow-x: scroll;
-    }
-
-    .partners__list dd {
-        padding: 20px 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-        flex-direction: row;
-        gap: 70px;
     }
 
     .nav__close-button {
