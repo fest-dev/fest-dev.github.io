@@ -43,7 +43,7 @@ export const csm = async ({accessToken, space, env}) => {
         return acc;
     }, {});
 
-    console.log(content);
+    console.log(content.agenda);
 
     entryPoints.forEach((entryPoint) => {
         const template = readFileSync(entryPoint.input, 'utf8');
