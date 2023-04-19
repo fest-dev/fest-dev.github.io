@@ -72,5 +72,6 @@ export const config = {
         'mediaPartners',
         'platinumPartners',
         'agenda',
+        'hostPartners',
     ],
 }

@@ -147,6 +147,14 @@
                  </a>
                  {{/mediaPartners}}
              </dd>
+             <dt>Host Partners</dt>
+             <dd>
+                 {{#hostPartners}}
+                 <a href="{{link}}" target="_blank">
+                     <img src="https:{{{logo.fields.file.url}}}" alt="{{title}}"/>
+                 </a>
+                 {{/hostPartners}}
+             </dd>
         </dl>
 
         <div class="partners__contact">
