@@ -17,6 +17,6 @@
                 <img src="./assets/images/close-icon.svg" alt="" />
             </button>
         </ul>
-        <a id="eventbrite-widget-modal-trigger-497907343267" target="_blank" rel="noreferrer" class="nav__get-tickets">Get Tickets</a>
+        <a href = "https://app.sli.do/event/cFevo1txGH25svutYrAtGf" target="_blank" rel="noreferrer" class="nav__get-tickets">Ask question</a>
     </div>
 </nav>
