@@ -1,0 +1,167 @@
+# Conference Website Template
+# Sections: Conferences
+# Pages: CoC, Organizers
+---
+
+coc: true
+title: Frontend Development Festival | Conference for Software Developers
+description: Frontend Development Festival. Conference for Frontend Developers and Software Engineers
+
+links:
+  cfp: https://app.sli.do/event/cFevo1txGH25svutYrAtGf
+  ask-questions: https://app.sli.do/event/cFevo1txGH25svutYrAtGf
+  linkedin: https://www.linkedin.com/company/fest-dev/
+  twitter: https://twitter.com/devfestconf
+  instagram: https://www.instagram.com/fest.dev/
+  facebook: https://www.facebook.com/devfestconf
+
+theme:
+  backgrounds:
+    header: url('/images/hero-bg.jpg')
+
+  colors:
+    primary: "#10bec9"
+    primary-hover: "#20d8e3"
+    foreground: "#101820"
+    gray-lightest: "#80868D"
+    link-hover: "#ffffff4d"
+    stroke-foreground: "#182833"
+
+sections:
+  header:
+    logo: /images/main-logo.svg
+    epigraph: Development festivals created by devs for devs.
+    description: "Passionate about coding? At Fest.Dev we emphasize spending meaningful time with the community. We invite you to come and discuss product development in every detail: from concept to design—from back to front."
+
+  conferences:
+    - extension: JS
+      color: "#D904A0"
+      city: Krakow
+      country: Poland
+      attendies: 200
+      date: 2023-11-18
+      link: /events/js/krakow-2024
+      image: /images/Krakow.svg
+
+    - extension: Dev
+      color: "#05AFF2"
+      city: Lisbon
+      country: Portugal
+      attendies: 200
+      date: 2024-02-20
+      link: /events/dev/lisbon-2024
+      image: /images/Lisbon.svg
+
+    - extension: JS
+      color: "#9305F2"
+      city: Porto
+      country: Portugal
+      attendies: 200
+      date: 2024-04-22
+      link: /events/js/porto-2024
+      image: /images/Porto.svg
+
+    - extension: JS
+      color: "#00C1D5"
+      city: Kharkiv
+      country: Ukraine
+      attendies: 1000
+      date: 2019-10-09
+      link: https://kharkivjs.org/
+      image: /images/Kharkiv.svg
+
+    - extension: JS
+      color: "#9305F2"
+      city: Porto
+      country: Portugal
+      attendies: 1000
+      date: 2023-04-20
+      link: /events/js/porto-2023
+      image: /images/Porto.svg
+
+  partners:
+    categories:
+      - category: Platinum
+        partners:
+          - name: Mindera
+            link: https://mindera.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/1JhPlYgGAhiRHy4Oryrlpw/b5397a9b0e1e398024546ceac5b727ec/Mindera.png
+
+      - category: Gold
+        partners:
+          - name: criticaltechworks
+            link: https://www.criticaltechworks.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/217mVKZ6iWeg3dXKAI5MgP/de91e6808bb617e97a8d8a7f345a3816/Critical_TechWorks.png
+
+          - name: JetBrains
+            link: https://www.jetbrains.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/3nr2R6Rkxm8TgeZaCNwsTz/4ed847e28fa1722b7161740155d92795/Jet_Brains.png
+
+          - name: FMQ
+            link: https://www.fabamaq.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/J01VeYJX7D18rSWnDTK9L/20f1c26d69825808a4ed49df8c7c46dc/FMQ.png
+
+      - category: Silver
+        partners:
+          - name: ama consulting
+            link: http://amaconsulting.io/
+            image: https://images.ctfassets.net/zms3oc04yx81/3XR3hVuHOVDOnU65Phqhlt/0a1a85a3914ca547ac4ca90a574e0dfd/logo__1__2.png
+
+          - name: ReviewPad
+            link: https://reviewpad.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/1MFh5DI8wPkAy7kJ1Rrha1/4f5c23d58d07974fa5b17b154e5a663a/Reviewpad.png
+
+      - category: Info Partners
+        partners:
+          - name: Porto Tech Hub
+            link: https://portotechhub.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/7adAjwUcqbnRNoatwKSWPi/e6e5345191222d763b489f20ff117153/Porto_Tech_Hub.png
+
+          - name: lewagon
+            link: https://www.lewagon.com/porto
+            image: https://images.ctfassets.net/zms3oc04yx81/3QzlcCFiXrr6OCLkKmRnSF/2dc939f677a1e5a4bbc4bad8ff867b07/Le_Wagon.png
+
+          - name: matosinhos.tech
+            link: https://www.matosinhos.tech/
+            image: https://images.ctfassets.net/zms3oc04yx81/5oCEUytE9iknAMi8BDquvx/afd66e2f21dfb4cde18dd3715b3f05c2/Matosinhos_Tech.png
+
+      - category: Media Partners
+        partners:
+          - name: Git Nation
+            link: https://vuejslive.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/6xnAUriYCrQDeplfkiYF2b/87387a94127984ef91daa9e95a13acfc/VueJS_London.png
+
+          - name: devexperts
+            link: https://devexperts.com/
+            image: https://images.ctfassets.net/zms3oc04yx81/58IPvUafzYtldpsR49uApg/19622ab635f9afcbe3978179a7ad700a/Dev_Experts.png
+
+          - name: Academia de codigo
+            link: https://www.academiadecodigo.org/
+            image: https://images.ctfassets.net/zms3oc04yx81/6IwFlyg9ezOYp4CICar4AV/ab078f3b105286c7bfe38b2d93d828d8/Academia_de_Codigo.png
+
+      - category: Host Partners
+        partners:
+          - name: wot porto
+            link: https://www.wotelshub.com/wotporto/
+            image: https://images.ctfassets.net/zms3oc04yx81/9Kk9ydb54bCm79joNwNrP/df40c27a12c2c3c82af37716b775908a/WOTELS_HUB.png
+
+  organizers:
+    - image: https://images.ctfassets.net/zms3oc04yx81/1B5ZdhF2FzaN7GL2pLdYHR/d9dceb72adcc991b4cb0fbf564aed8d3/12274573_955044314532714_4871784561574834557_n__2_.jpg
+      name: Artem Zakharchenko
+      links:
+        linkedin: test
+        instagram: test
+        twitter: test
+      description: Solution Architect & Head of Node.js department. CEO and founder of
+        KharkivJS (Ukraine-based conference gathering 700+ people yearly). I am all for
+        quality and building outstanding products. Which concerns this conference as well.
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/58jpSWNMdkL4dQqv12SUoh/5e6a44b56ebc1a0295e99fe508eadf8b/image_6483441__1_.JPG
+      name: Galina Shakirova
+      links:
+        linkedin: test
+        instagram: test
+        twitter: test
+      description: Talent Acquisition & HR Pro. Co-organizing conferences since 2011.
+        Studying Technology Management at the moment. I believe that there is no better
+        way to spend time than in a good company. Looking forward to meeting you at Fest.Dev.

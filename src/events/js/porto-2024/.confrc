@@ -1,0 +1,62 @@
+# Conference Website Template
+# Sections: Intro, Speakers, Partners
+# Pages: CoC, Schedule, Speaker
+---
+
+title: Frontend Development Festival Porto 2024 | Conference for Software Developers
+description: Frontend Development Festival Porto 2024. Conference for Frontend Developers and Software Engineers
+date: April 2024
+location: Porto, Portugal
+
+links:
+  linkedin: https://www.linkedin.com/company/fest-dev/
+  twitter: https://twitter.com/devfestconf
+  instagram: https://www.instagram.com/fest.dev/
+  facebook: https://www.facebook.com/devfestconf
+
+theme:
+  backgrounds:
+    header: url('/images/hero-bg.jpg')
+
+  colors:
+    primary: "#9305F2"
+    primary-hover: "#9305F24D"
+    foreground: "#101820"
+    gray-lightest: "#80868D"
+    link-hover: "#ffffff4d"
+    stroke-foreground: "#182833"
+
+sections:
+    header:
+      logo: /images/fest-js-porto.svg
+
+    intro:
+       text: >
+         A full-day technical conference in Porto, set to take place in April 2024, all about Web Technologies. Stay tuned for more details to be released in the coming months. Don't miss out on this opportunity to expand your knowledge and connect with industry leaders in the field of Web Technologies. Get ready to gain valuable insights, forge meaningful connections, and take your expertise to the next level.
+
+    speakers:
+      length: 0
+
+    partners:
+      categories:
+        length: 0
+
+
+    conferences:
+      - extension: JS
+        color: "#D904A0"
+        city: Krakow
+        country: Poland
+        attendies: 200
+        date: 2023-11-18
+        link: /events/js/krakow-2024
+        image: /images/Krakow.svg
+
+      - extension: Dev
+        color: "#05AFF2"
+        city: Lisbon
+        country: Portugal
+        attendies: 200
+        date: 2024-02-20
+        link: /events/dev/lisbon-2024
+        image: /images/Lisbon.svg

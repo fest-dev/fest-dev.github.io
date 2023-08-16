@@ -1,0 +1,19 @@
+{
+  "name": "fest.dev-website",
+  "version": "1.0.0",
+  "description": "website fest.dev",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build/build.mjs ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fest-dev/fest.dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fest-dev/fest.dev/issues"
+  },
+  "homepage": "https://github.com/fest-dev/fest.dev#readme"
+}

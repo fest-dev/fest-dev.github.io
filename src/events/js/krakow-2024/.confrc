@@ -1,0 +1,82 @@
+# Conference Website Template
+# Sections: Intro, Speakers, Partners
+# Pages: CoC, Schedule, Speaker
+---
+
+title: Frontend Development Festival Krakow 2023 | Conference for Software Developers
+description: Frontend Development Festival Krakow 2023. Conference for Frontend Developers and Software Engineers
+date: February 2024
+status: Preparing
+
+links:
+  cfp: https://docs.google.com/forms/d/1OPrfCEnCh_PHYZnFmeh5ufXQvxzOr4IMs_O8ale4ovs
+  linkedin: https://www.linkedin.com/company/fest-dev/
+  twitter: https://twitter.com/devfestconf
+  instagram: https://www.instagram.com/fest.dev/
+  facebook: https://www.facebook.com/devfestconf
+
+theme:
+  backgrounds:
+    header: url('/images/hero-bg.jpg')
+
+  colors:
+    primary: "#D904A0"
+    primary-hover: "#D904A04D"
+    foreground: "#101820"
+    gray-lightest: "#80868D"
+    link-hover: "#ffffff4d"
+    stroke-foreground: "#182833"
+
+sections:
+    header:
+      logo: /images/fest-js-krakow.svg
+
+    intro:
+       text: >
+         A full-day technical conference in Krakow, set to take place in February 2024, all about Web Technologies. Stay tuned for more details to be released in the coming months. Don't miss out on this opportunity to expand your knowledge and connect with industry leaders in the field of Web Technologies. Get ready to gain valuable insights, forge meaningful connections, and take your expertise to the next level.
+
+    speakers:
+    - image: /images/khrystyna-landvytovych.jpeg
+      name: Khrystyna Landvytovych
+      position: Frontend engineer in Peerigon
+      title: Animation in Engineering World
+      about: Tech traveler, coffee connoisseur and Google power user
+      description: A human-centered-solutions enthusiast, I’ll be your host at Fest.Dev. I am currently working with design system at Namecheap, navigating through what makes a product unique and consistent. 
+
+    - image: /images/aleksandra-sikora.jpg
+      title: To be announced soon
+      name: Aleksandra Sikora
+      links:
+        twitter: https://twitter.com/aleksandrasays
+      position: Open-source developer at The Guild
+      description: To be announced soon
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/1B5ZdhF2FzaN7GL2pLdYHR/d9dceb72adcc991b4cb0fbf564aed8d3/12274573_955044314532714_4871784561574834557_n__2_.jpg
+      title: Workshop. Client side security 101
+      name: Artem Zakharchenko
+      position: Head of Node.js department in Namecheap
+      description: Today security becomes more and more hot topic on the market. It is not enough to say I covered top 10 OWASP vulnerabilities. On the workshop I would like to demonstrate vector of common attacks and provide a suggestions how to mitigate them. Let’s build secure web together.
+
+    partners:
+      categories:
+        length: 0
+
+
+    conferences:
+      - extension: Dev
+        color: "#05AFF2"
+        city: Lisbon
+        country: Portugal
+        attendies: 200
+        date: 2024-02-20
+        link: /events/dev/lisbon-2024
+        image: /images/Lisbon.svg
+
+      - extension: JS
+        color: "#9305F2"
+        city: Porto
+        country: Portugal
+        attendies: 200
+        date: 2024-04-22
+        link: /events/js/porto-2024
+        image: /images/Porto.svg
