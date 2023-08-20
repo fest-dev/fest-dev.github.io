@@ -38,25 +38,17 @@ sections:
       color: "#D904A0"
       city: Krakow
       country: Poland
-      attendies: 200
-      date: 2023-11-18
+      attendies: 300
+      date: 2024-03-02
       link: /events/js/krakow-2024
       image: /images/Krakow.svg
 
-    - extension: Dev
-      color: "#05AFF2"
-      city: Lisbon
-      country: Portugal
-      attendies: 200
-      date: 2024-02-20
-      link: /events/dev/lisbon-2024
-      image: /images/Lisbon.svg
 
     - extension: JS
       color: "#9305F2"
       city: Porto
       country: Portugal
-      attendies: 200
+      attendies: 250
       date: 2024-04-22
       link: /events/js/porto-2024
       image: /images/Porto.svg
