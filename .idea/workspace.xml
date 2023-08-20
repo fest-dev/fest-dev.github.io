@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73f5cba7-efde-4670-ab6a-49d9d7cee679" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/schedule.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="arn:aws:eks:us-west-2:727594095862:cluster/production-1" />
+    <option name="namespace" value="default" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ISoz2O6Qdzlbs5F0wJHEQM0GEr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/artem/Development/fest.dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates" />
+      <recent name="$PROJECT_DIR$/src/templates/fragments/full" />
+      <recent name="$PROJECT_DIR$/src/templates/fragments/common" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates/fragments" />
+      <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="$PROJECT_DIR$/src/script" />
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$/src/templates" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73f5cba7-efde-4670-ab6a-49d9d7cee679" name="Changes" comment="" />
+      <created>1670184604033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670184604033</updated>
+      <workItem from="1670184606759" duration="39390000" />
+      <workItem from="1671285940575" duration="22110000" />
+      <workItem from="1671559568825" duration="494000" />
+      <workItem from="1672067249527" duration="1141000" />
+      <workItem from="1672848874018" duration="671000" />
+      <workItem from="1673811817667" duration="16122000" />
+      <workItem from="1675113059795" duration="5574000" />
+      <workItem from="1675723243673" duration="1824000" />
+      <workItem from="1676831358365" duration="1321000" />
+      <workItem from="1676920142867" duration="10445000" />
+      <workItem from="1677025217532" duration="5253000" />
+      <workItem from="1677148987698" duration="265000" />
+      <workItem from="1677927262703" duration="6000" />
+      <workItem from="1677927408696" duration="1338000" />
+      <workItem from="1679345848906" duration="2164000" />
+      <workItem from="1679349223859" duration="3596000" />
+      <workItem from="1679560416560" duration="4545000" />
+      <workItem from="1680161809212" duration="3017000" />
+      <workItem from="1681248742300" duration="5331000" />
+      <workItem from="1681941524951" duration="7057000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
