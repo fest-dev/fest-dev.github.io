@@ -38,8 +38,8 @@ sections:
       color: "#D904A0"
       city: Krakow
       country: Poland
-      attendies: 250
-      date: 2023-11-18
+      attendies: 300
+      date: 2024-03-02
       link: /events/js/krakow-2024
       image: /images/Krakow.svg
 
@@ -69,6 +69,24 @@ sections:
       date: 2023-04-20
       link: /events/js/porto-2023
       image: /images/Porto.svg
+
+     - extension: JS
+       color: "#00C1D5"
+       city: Kharkiv
+       country: Ukraine
+       attendies: 1000
+       date: 2018-10-09
+       link: https://kharkivjs.org/
+       image: /images/Kharkiv.svg
+
+     - extension: JS
+       color: "#00C1D5"
+       city: Kharkiv
+       country: Ukraine
+       attendies: 1000
+       date: 2017-10-09
+       link: https://kharkivjs.org/
+       image: /images/Kharkiv.svg
 
   partners:
     categories:
