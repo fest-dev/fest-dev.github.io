@@ -4,8 +4,8 @@
 ---
 
 coc: true
-title: Frontend Development Festival | Conference for Software Developers
-description: Frontend Development Festival. Conference for Frontend Developers and Software Engineers
+title: Fest.dev: Conferences for Software Developers
+description: Elevate your skills at Fest.dev: Krakow and Porto conferences for frontend developers and software engineers. Unite with experts in architecture, AI, and innovation.
 
 links:
   cfp: https://app.sli.do/event/cFevo1txGH25svutYrAtGf
@@ -30,34 +30,25 @@ theme:
 sections:
   header:
     logo: /images/main-logo.svg
-    epigraph: Development festivals created by devs for devs.
-    description: "Passionate about coding? At Fest.Dev we emphasize spending meaningful time with the community. We invite you to come and discuss product development in every detail: from concept to design—from back to front."
+    epigraph: For Developers, By Developers: Unleash the Possibilities
+    description: "Driven by the dynamic blend of software development, architectural innovation, engineering mastery, and AI exploration? Fest.Dev invites you to a world of engagement. Participate in profound discussions encompassing holistic product development, architectural insights, cutting-edge engineering, and the frontiers of AI—unveiling concepts, designs, and both backend and frontend realms."
 
   conferences:
     - extension: JS
       color: "#D904A0"
       city: Krakow
       country: Poland
-      attendies: 200
+      attendies: 250
       date: 2023-11-18
       link: /events/js/krakow-2024
       image: /images/Krakow.svg
-
-    - extension: Dev
-      color: "#05AFF2"
-      city: Lisbon
-      country: Portugal
-      attendies: 200
-      date: 2024-02-20
-      link: /events/dev/lisbon-2024
-      image: /images/Lisbon.svg
 
     - extension: JS
       color: "#9305F2"
       city: Porto
       country: Portugal
-      attendies: 200
-      date: 2024-04-22
+      attendies: 250
+      date: 2024-05-15
       link: /events/js/porto-2024
       image: /images/Porto.svg
 
