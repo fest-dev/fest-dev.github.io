@@ -4,8 +4,8 @@
 ---
 
 coc: true
-title: Fest.dev: Conferences for Software Developers
-description: Elevate your skills at Fest.dev: Krakow and Porto conferences for frontend developers and software engineers. Unite with experts in architecture, AI, and innovation.
+title: "Fest.dev: Conferences for Software Developers"
+description: "Elevate your skills at Fest.dev: Krakow and Porto conferences for frontend developers and software engineers. Unite with experts in architecture, AI, and innovation."
 
 links:
   cfp: https://app.sli.do/event/cFevo1txGH25svutYrAtGf
@@ -30,7 +30,7 @@ theme:
 sections:
   header:
     logo: /images/main-logo.svg
-    epigraph: For Developers, By Developers: Unleash the Possibilities
+    epigraph: "For Developers, By Developers: Unleash the Possibilities"
     description: "Driven by the dynamic blend of software development, architectural innovation, engineering mastery, and AI exploration? Fest.Dev invites you to a world of engagement. Participate in profound discussions encompassing holistic product development, architectural insights, cutting-edge engineering, and the frontiers of AI—unveiling concepts, designs, and both backend and frontend realms."
 
   conferences:
@@ -70,7 +70,7 @@ sections:
       link: /events/js/porto-2023
       image: /images/Porto.svg
 
-     - extension: JS
+    -  extension: JS
        color: "#00C1D5"
        city: Kharkiv
        country: Ukraine
@@ -79,7 +79,7 @@ sections:
        link: https://kharkivjs.org/
        image: /images/Kharkiv.svg
 
-     - extension: JS
+    -  extension: JS
        color: "#00C1D5"
        city: Kharkiv
        country: Ukraine
