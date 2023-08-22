@@ -53,15 +53,6 @@ sections:
       image: /images/Porto.svg
 
     - extension: JS
-      color: "#00C1D5"
-      city: Kharkiv
-      country: Ukraine
-      attendies: 1000
-      date: 2019-10-09
-      link: https://kharkivjs.org/
-      image: /images/Kharkiv.svg
-
-    - extension: JS
       color: "#9305F2"
       city: Porto
       country: Portugal
@@ -69,6 +60,15 @@ sections:
       date: 2023-04-20
       link: /events/js/porto-2023
       image: /images/Porto.svg
+
+    - extension: JS
+      color: "#00C1D5"
+      city: Kharkiv
+      country: Ukraine
+      attendies: 1000
+      date: 2019-10-09
+      link: https://kharkivjs.org/
+      image: /images/Kharkiv.svg
 
     -  extension: JS
        color: "#00C1D5"
