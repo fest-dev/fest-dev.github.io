@@ -3,8 +3,8 @@
 # Pages: CoC, Schedule, Speaker
 ---
 
-title: Frontend Development Festival Krakow 2023 | Conference for Software Developers
-description: Frontend Development Festival Krakow 2023. Conference for Frontend Developers and Software Engineers
+title: "Fest.dev: Krakow 2024. Conference for Software Developers. Javascript developers conference."
+description: Frontend Development Festival Krakow 2024. Conference for Frontend Developers and Software Engineers
 date: March 2024
 status: Preparing
 
@@ -63,15 +63,6 @@ sections:
 
 
     conferences:
-      - extension: Dev
-        color: "#05AFF2"
-        city: Lisbon
-        country: Portugal
-        attendies: 200
-        date: 2024-02-20
-        link: /events/dev/lisbon-2024
-        image: /images/Lisbon.svg
-
       - extension: JS
         color: "#9305F2"
         city: Porto
