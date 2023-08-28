@@ -58,6 +58,8 @@ sections:
       description: Today security becomes more and more hot topic on the market. It is not enough to say I covered top 10 OWASP vulnerabilities. On the workshop I would like to demonstrate vector of common attacks and provide a suggestions how to mitigate them. Let’s build secure web together.
 
     partners:
+      description: Here will be the coolest Partners that are making this festival possible.
+      partnerLink: https://forms.gle/2VTAENM777naFXaL8
       categories:
         length: 0
 
