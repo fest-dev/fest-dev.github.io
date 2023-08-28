@@ -89,6 +89,7 @@ sections:
        image: /images/Kharkiv.svg
 
   partners:
+    partnerLink: https://forms.gle/2VTAENM777naFXaL8
     categories:
       - category: Platinum
         partners:
