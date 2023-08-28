@@ -135,6 +135,7 @@ sections:
 
     partners:
       description: Here are the coolest Partners that are making this festival possible.
+      partnerLink: https://forms.gle/esi4ao73NF1v2VVk6
       categories:
         - category: Platinum
           partners:
