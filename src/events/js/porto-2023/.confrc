@@ -3,7 +3,7 @@
 # Pages: CoC, Schedule, Speaker
 ---
 
-title: Frontend Development Festival Porto 2023 | Conference for Software Developers
+title: "Fest.dev: Porto 2023 | Conference for Software Developers and Javascript Engineers"
 description: Frontend Development Festival Porto 2023. Conference for Frontend Developers and Software Engineers
 date: 2023-04-22
 location: Porto, Portugal
@@ -44,32 +44,32 @@ sections:
           title: Master of Ceremony
           name: Giovanni Moschini
           position: Namecheap.com
-          about: A human-centered-solutions enthusiast, I’ll be your host at Fest.Dev. I am currently working with design system at Namecheap, navigating through what makes a product unique and consistent. 
+          about: A human-centered-solutions enthusiast, I’ll be your host at Fest.Dev. I am currently working with design system at Namecheap, navigating through what makes a product unique and consistent.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/1oMcsQunSkdYMZd8JEkVsm/60171f71aa265b6dc7cb94c19664ce22/Nelson_Sachse.jpg
           title: The state of tech in the north of Portugal
           name: Nelson Sachse
           position: Strategy Lead | Founder at Matosinhos.tech
-          tags: 
+          tags:
             - Communities
             - State of market
-          description: Nelson Sachse is a technologist and strategist with more than a decade in the tech industry. Throughout his journey, he has led teams and developed digital solutions for some of the biggest companies in hospitality, retail, fintech, gaming, health and the auto industry. He helped engineers and organizations through multiple product life cycles from start to end, planned and executed GTM strategies, developed business propositions, hired professionals across diverse industries, built tech events, and spoke at conferences. Beyond his professional life, he's a true believer in social impact and contributing positively to society. 
+          description: Nelson Sachse is a technologist and strategist with more than a decade in the tech industry. Throughout his journey, he has led teams and developed digital solutions for some of the biggest companies in hospitality, retail, fintech, gaming, health and the auto industry. He helped engineers and organizations through multiple product life cycles from start to end, planned and executed GTM strategies, developed business propositions, hired professionals across diverse industries, built tech events, and spoke at conferences. Beyond his professional life, he's a true believer in social impact and contributing positively to society.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/5L5xliXHaPeZItzclu9dwY/3c64b8bc50e9b1ffa82ec1e24f2943a4/Harshil_Headshot.jpg
           title: Controlling the web with a PS5 controller
           name: Harshil Agrawal
           position: Developer Advocate at Contentful
-          tags: 
+          tags:
             - Web API
             - PS5
             - Hacking
-          description: Web APIs have come a long way. You can create web apps that interact with devices via USB or BlueTooth with the respective Web API. You can build games on the web that is controlled via controllers! Join me to learn how I hacked a PS5 controller to play web games. 
+          description: Web APIs have come a long way. You can create web apps that interact with devices via USB or BlueTooth with the respective Web API. You can build games on the web that is controlled via controllers! Join me to learn how I hacked a PS5 controller to play web games.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/62HrCKkC7B5Sx53Actof9q/836919bc5cf93fff276a0a712cdc9ee7/daniel.jpg
           title: Learn Remix, Accidentally Learn the Web
           name: Daniel Afonso
           position: Developer Advocate at OLX
-          tags: 
+          tags:
             - Remix
             - React
             - Full-stack
@@ -79,26 +79,26 @@ sections:
           title: AI for Developers – assistant or potential threat?
           name: Artem Yavorsky
           position: DevTools Team Lead at Wix
-          tags: 
+          tags:
             - AI
             - DX
-          description: For the last few years, we\'ve seen a variety of tools based on AI which provides code suggestions for developers, generates assets, improves the build process, and more. Let\'s dive into AI basics, understand how developer AI tools work under the hood, how it helps speed up the development process today and try to predict how it will evolve. 
+          description: For the last few years, we\'ve seen a variety of tools based on AI which provides code suggestions for developers, generates assets, improves the build process, and more. Let\'s dive into AI basics, understand how developer AI tools work under the hood, how it helps speed up the development process today and try to predict how it will evolve.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/5Rd4kt7t16gcfYFlwUF504/4d93c4ac299fda365d7612a6421843cb/E015GUGD2V6-U0222SR2F5X-23734187698c-512.jpg
           title: From Figma to fullstack React App with minimal programming
           name: Egor Miasnikov
           position: Solution Architect at Amazon
-          tags: 
+          tags:
             - Figma
             - React
             - Full-stack
-          description: In later 2021, Amazon announced Amplify Studio at our AWS re:Invent, which is going to help designers and developers easily collaborate within a workflow. I'll showcase this tool and how easily you can create a full-stack React app from a single mockup in Figma. 
+          description: In later 2021, Amazon announced Amplify Studio at our AWS re:Invent, which is going to help designers and developers easily collaborate within a workflow. I'll showcase this tool and how easily you can create a full-stack React app from a single mockup in Figma.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/5pG1DluYjZUrTuJELhGVbJ/68ade647adc6bed0b3c268bb0b2ae1db/romulo.jpg
           title: TC39 - From the proposal to ECMAScript - Step by Step
           name: Romulo Cintra
           position: Web enthusiast at Igalia
-          tags: 
+          tags:
             - Standards
             - Language Design
           about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue odio, euismod sit amet sapien ut, ornare molestie eros. Curabitur sit amet pellentesque arcu, mattis cursus magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue odio, euismod sit amet sapien ut, ornare molestie eros. Curabitur sit amet pellentesque arcu, mattis cursus magna.
@@ -108,30 +108,30 @@ sections:
           title: 3D in the web for all
           name: Sara Vieira
           position: Developer at Axo
-          tags: 
+          tags:
             - 3D
             - Front-End
             - React
-          description: 3D in the web sounds like something you would only do if you really want to win a website of the year award but I am here to tell you it\s actually not as hard as it seems and maybe it can be fun? Let\'s take a journey and bring 3D to the web 
+          description: 3D in the web sounds like something you would only do if you really want to win a website of the year award but I am here to tell you it\s actually not as hard as it seems and maybe it can be fun? Let\'s take a journey and bring 3D to the web
 
         - image: https://images.ctfassets.net/zms3oc04yx81/2LVn32jiUshc8AClXYnCpt/57733fef93d9988785fb5ce425ed17d0/IMG_6850_crop_not_compressed.jpg
           title: Security in Web - Unbvious parts
           name: Eugene Moroz
           position: Chief Architect at Namecheap
-          tags: 
+          tags:
             - Security
             - Front-End
-          description: Security is a rabbit hole that might consume all of your time, and after that there still might be issues. In this discussion we delve into the less explored methods of fortifying your website against common vulnerabilities. Those methods might work as additional layer of security in case if some vulnerable code reaches production. Don't miss this opportunity to learn about the latest and greatest methods for keeping your website safe and secure. 
+          description: Security is a rabbit hole that might consume all of your time, and after that there still might be issues. In this discussion we delve into the less explored methods of fortifying your website against common vulnerabilities. Those methods might work as additional layer of security in case if some vulnerable code reaches production. Don't miss this opportunity to learn about the latest and greatest methods for keeping your website safe and secure.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/5hn8ThziX6lNDMdcxu9OYr/11f58f3590aced64694c9e90cc6bccf6/Portrait-Marcelo-Sousa-square-2kwide.jpg
           title: 'Fluid pull requests: a new way to safely change code faster!'
           name: Marcelo Sousa
           position: Ceo at Reviewpad
-          tags: 
+          tags:
             - GitHub
             - Project Management
             - AI
-          description: Pull requests are the backbone of the DevOps infrastructure across many companies in the industry. In the past year there were over 100 million pull requests created on GitHub alone. However, not every pull request is the same. Still, developers apply the same code review process to every pull request regardless of the author or the changes made. As a result, developers spend most of their time waiting for reviews on pull requests which do not provide any value to the overall code quality. To solve this bottleneck, fluid pull requests are an extension of pull requests with principles from trunk-based development. Developers configure automations in pull requests that allow them to apply different code reviews process depending on the sensitivity of the changes. In this talk, I explain the current problems of pull requests, its impact and how fluid pull requests are helping multiple teams with their pull request workflows. 
+          description: Pull requests are the backbone of the DevOps infrastructure across many companies in the industry. In the past year there were over 100 million pull requests created on GitHub alone. However, not every pull request is the same. Still, developers apply the same code review process to every pull request regardless of the author or the changes made. As a result, developers spend most of their time waiting for reviews on pull requests which do not provide any value to the overall code quality. To solve this bottleneck, fluid pull requests are an extension of pull requests with principles from trunk-based development. Developers configure automations in pull requests that allow them to apply different code reviews process depending on the sensitivity of the changes. In this talk, I explain the current problems of pull requests, its impact and how fluid pull requests are helping multiple teams with their pull request workflows.
 
     partners:
       description: Here are the coolest Partners that are making this festival possible.
@@ -206,24 +206,6 @@ sections:
         city: Krakow
         country: Poland
         attendies: 200
-        date: 2023-11-18
+        date: 2024-03-02
         link: /events/js/krakow-2024
         image: /images/Krakow.svg
-
-      - extension: Dev
-        color: "#05AFF2"
-        city: Lisbon
-        country: Portugal
-        attendies: 200
-        date: 2024-02-20
-        link: /events/dev/lisbon-2024
-        image: /images/Lisbon.svg
-
-      - extension: JS
-        color: "#9305F2"
-        city: Porto
-        country: Portugal
-        attendies: 200
-        date: 2024-04-22
-        link: /events/js/porto-2024
-        image: /images/Porto.svg
