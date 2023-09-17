@@ -5,7 +5,8 @@
 
 title: "Fest.dev: Krakow 2024. Conference for Software Developers. Javascript developers conference."
 description: Frontend Development Festival Krakow 2024. Conference for Frontend Developers and Software Engineers
-date: March 2024
+date: 22 of March, 2024
+location: Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland
 status: Preparing
 
 links:
@@ -14,6 +15,7 @@ links:
   twitter: https://twitter.com/devfestconf
   instagram: https://www.instagram.com/fest.dev/
   facebook: https://www.facebook.com/devfestconf
+  discountLink: https://forms.gle/j15LK77AKaGNHcU2A
 
 theme:
   backgrounds:
@@ -56,6 +58,12 @@ sections:
       name: Artem Zakharchenko
       position: Head of Node.js department in Namecheap
       description: Today security becomes more and more hot topic on the market. It is not enough to say I covered top 10 OWASP vulnerabilities. On the workshop I would like to demonstrate vector of common attacks and provide a suggestions how to mitigate them. Let’s build secure web together.
+
+    venue:
+      name: Q Hotel Plus
+      address: Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland
+      description: Centrally Located Krakow Hotel with Scenic Views of Wawel Castle – Your Conference Venue
+      placeId: ChIJBzI1fG9bFkcRXiXSeizNM0U
 
     partners:
       description: Here will be the coolest Partners that are making this festival possible.
