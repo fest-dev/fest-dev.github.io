@@ -24,7 +24,7 @@
     <link rel="sitemap" href="/sitemap-index.xml">
     <meta name="theme-color" content="#10BEC9">
     <!-- <base href={host}/> -->
-	<link rel="stylesheet" href="/_astro/coc.2c66532c.css" />
+	<link rel="stylesheet" href="/_astro/coc.fe597fb9.css" />
 <link rel="stylesheet" href="/_astro/index.82961d87.css" /><script type="module">window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a("js",new Date);a("config","G-LPD8P61H27");
 </script></head>
 	<body class="bg-foreground">
@@ -48,6 +48,8 @@
             <a href="/events/js/krakow-2024/#about">About Event</a>
           </li><li class="text-center text-2xl lg:text-lg hover:text-primary">
             <a href="/events/js/krakow-2024/#speakers">Speakers</a>
+          </li><li class="text-center text-2xl lg:text-lg hover:text-primary">
+            <a href="/events/js/krakow-2024/#venue">Venue</a>
           </li><li class="text-center text-2xl lg:text-lg hover:text-primary">
             <a href="/events/js/krakow-2024/#partners">Partners</a>
           </li><li class="text-center text-2xl lg:text-lg hover:text-primary">
@@ -185,9 +187,22 @@ navLinks.forEach((link) => {
   
   
   <p class="mt-16 mb-5 font-rapid text-primary text-3xl md:text-5xl">
-  March 2024
+  22 of March, 2024
 </p>
+  <a class="block text-primary text-white text-lg" href="#location">
+      Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland
   
+  </a>
+  <div class="flex justify-center items-center mb-5 mt-5 rounded-3xl text-white">
+  <a class="flex justify-center items-center py-3 px-6 m-3 bg-primary shadow-main max-w-[230px] rounded text-base text-robot text-center" href="https://forms.gle/2VTAENM777naFXaL8" target="_blank" rel="noreferrer">
+    <span>For Partner</span>
+    <img class="ml-3 mt-1 w-[24px] h-[18px]" src="/images/Subtract.svg" alt="mail icon">
+</a>
+  <a class="flex justify-center items-center py-3 px-6 c bg-primary shadow-main max-w-[230px] rounded text-base text-robot text-center" href="https://forms.gle/j15LK77AKaGNHcU2A" target="_blank" rel="noreferrer">
+    <span>Get Discount</span>
+    <img class="ml-3 mt-1 w-[24px] h-[18px]" src="/images/Union.svg" alt="mail icon">
+</a>
+</div>
 </header><section id="about" class="py-20 px-5 lg:px-20 grid justify-items-center items-center bg-foreground  text-white pb-24">
   
   <header class="grid justify-items-center mb-16 w-full">
@@ -235,6 +250,136 @@ navLinks.forEach((link) => {
 </a>
                     </li>
           </ul>  
+</section><section id="venue" class="py-20 px-5 lg:px-20 grid justify-items-center bg-venue bg-right-top bg-full bg-no-repeat">
+  
+  <header class="grid justify-items-center mb-16 w-full">
+  <h2 class="text-white text-center text-4xl sm:text-5xl lg:text-5xl tracking-wide font-rapid">
+    The Venue
+  </h2>
+</header>
+  <div id="map" class="h-[600px] w-full rounded-lg max-w-7xl"></div>
+<script>(function(){const address = "Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland";
+const placeId = "ChIJBzI1fG9bFkcRXiXSeizNM0U";
+
+    window.initMap = function initMap() {
+        const geocoder = new google.maps.Geocoder();
+        geocoder.geocode({ address }, (result, status) => {
+            if (status !== google.maps.GeocoderStatus.OK) return
+
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: result[0].geometry.location,
+                zoom: 12,
+                mapTypeControl: false,
+                draggable: true,
+                scaleControl: false,
+                scrollwheel: false,
+                navigationControl: false,
+                streetViewControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [
+                    {elementType: "geometry", stylers: [{color: "#242f3e"}]},
+                    {elementType: "labels.text.stroke", stylers: [{color: "#242f3e"}]},
+                    {elementType: "labels.text.fill", stylers: [{color: "#746855"}]},
+                    {
+                        featureType: "administrative.locality",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#d59563"}],
+                    },
+                    {
+                        featureType: "poi",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#d59563"}],
+                    },
+                    {
+                        featureType: "poi.park",
+                        elementType: "geometry",
+                        stylers: [{color: "#263c3f"}],
+                    },
+                    {
+                        featureType: "poi.park",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#6b9a76"}],
+                    },
+                    {
+                        featureType: "road",
+                        elementType: "geometry",
+                        stylers: [{color: "#38414e"}],
+                    },
+                    {
+                        featureType: "road",
+                        elementType: "geometry.stroke",
+                        stylers: [{color: "#212a37"}],
+                    },
+                    {
+                        featureType: "road",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#9ca5b3"}],
+                    },
+                    {
+                        featureType: "road.highway",
+                        elementType: "geometry",
+                        stylers: [{color: "#746855"}],
+                    },
+                    {
+                        featureType: "road.highway",
+                        elementType: "geometry.stroke",
+                        stylers: [{color: "#1f2835"}],
+                    },
+                    {
+                        featureType: "road.highway",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#f3d19c"}],
+                    },
+                    {
+                        featureType: "transit",
+                        elementType: "geometry",
+                        stylers: [{color: "#2f3948"}],
+                    },
+                    {
+                        featureType: "transit.station",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#d59563"}],
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [{color: "#17263c"}],
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "labels.text.fill",
+                        stylers: [{color: "#515c6d"}],
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "labels.text.stroke",
+                        stylers: [{color: "#17263c"}],
+                    },
+                ],
+            });
+
+            const service = new google.maps.places.PlacesService(map);
+
+            service.getDetails({
+                placeId: placeId
+            }, function (place) {
+                if (place == null) return
+                const marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                const infowindow = new google.maps.InfoWindow();
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + place.formatted_address + '</div>');
+                    infowindow.open(map, this);
+                });
+            });
+        })
+    }
+})();</script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBMmE0Onw2TggE3mzYZTiaFx7ew4cWmIc&callback=initMap&v=weekly&libraries=places"></script><address class="mt-8 font-roboto text-center text-lg text-gray-lightest leading-7 max-w-7xl not-italic">
+            <p><b class="text-white">Q Hotel Plus</b> Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland</p>
+          </address>  
 </section><section id="partners" class="py-20 px-5 lg:px-20 flex flex-wrap justify-center bg-foreground bg-cover bg-no-repeat">
   
   <header class="grid justify-items-center mb-16 w-full">
@@ -246,10 +391,10 @@ navLinks.forEach((link) => {
   <h4 class="mb-5 font-rapid text-center text-2xl">
     Feel like contributing?
   </h4>
-  <a class="flex justify-center items-center py-3 px-10 bg-primary shadow-main max-w-[230px] rounded text-xl text-robot text-center" href="https://forms.gle/2VTAENM777naFXaL8" target="_blank" rel="noreferrer">
-      <span>Contact us</span>
-      <img class="ml-3 mt-1 w-[24px] h-[18px]" src="/images/Subtract.svg" alt="mail icon">
-  </a>
+  <a class="flex justify-center items-center py-3 px-10 m-3 bg-primary shadow-main max-w-[230px] rounded text-xl text-robot text-center" href="https://forms.gle/2VTAENM777naFXaL8" target="_blank" rel="noreferrer">
+    <span>Contact us</span>
+    <img class="ml-3 mt-1 w-[24px] h-[18px]" src="/images/Subtract.svg" alt="mail icon">
+</a>
 </div>
     
 </section><section id="upcoming-conferences" class="py-20  grid justify-items-center bg-foreground bg-start grid overflow-hidden">
