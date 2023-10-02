@@ -77,6 +77,9 @@ sections:
             - name: JSNation
               link: https://twitter.com/thejsnation
               image: https://images.ctfassets.net/zms3oc04yx81/7FQOxGLZ2W4iEusdK2mlMd/25919630d21badd17309f33d992bcba8/JSNation_logo_wht.png
+            - name: Fwdays
+              link: https://fwdays.com/en/event/react-ts-fwdays-2023?utm_source=infop-festdev&utm_campaign=react-ts-fwdays-2023
+              image: https://images.ctfassets.net/zms3oc04yx81/YU9mmK9a9eLDF2Fp3L4Aa/6163908c32bc017d7052ca5a2040b995/fwdays_rbg_800_800__1_.png
         - category: Host Partners
           partners:
             - name: QHotel Plus
