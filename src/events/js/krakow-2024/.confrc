@@ -80,6 +80,11 @@ sections:
             - name: Fwdays
               link: https://fwdays.com/en/event/react-ts-fwdays-2023?utm_source=infop-festdev&utm_campaign=react-ts-fwdays-2023
               image: https://images.ctfassets.net/zms3oc04yx81/YU9mmK9a9eLDF2Fp3L4Aa/6163908c32bc017d7052ca5a2040b995/fwdays_rbg_800_800__1_.png
+        - category: Community Partners
+          partners:
+            - name: FrontSpot Poland
+              link: https://wearecommunity.io/communities/SLUyMJHFOE
+              image: https://images.ctfassets.net/zms3oc04yx81/3GpwEs1ohPElEzVrSEKgSI/3f2259e3b9e373234a4adb28221790e0/FS_Logo_Poland_Badge.png
         - category: Cutest Friends
           partners:
             - name: Techies
