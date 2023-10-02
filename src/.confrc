@@ -135,6 +135,10 @@ sections:
             link: https://www.matosinhos.tech/
             image: https://images.ctfassets.net/zms3oc04yx81/5oCEUytE9iknAMi8BDquvx/afd66e2f21dfb4cde18dd3715b3f05c2/Matosinhos_Tech.png
 
+          - name: Fwdays
+            link: https://twitter.com/thejsnation
+            image: https://fwdays.com/en/event/react-ts-fwdays-2023?utm_source=infop-festdev&utm_campaign=react-ts-fwdays-2023
+
       - category: Media Partners
         partners:
           - name: Git Nation
