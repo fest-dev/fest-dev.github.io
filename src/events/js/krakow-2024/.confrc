@@ -69,6 +69,11 @@ sections:
       description: Here will be the coolest Partners that are making this festival possible.
       partnerLink: https://forms.gle/2VTAENM777naFXaL8
       categories:
+        - category: Silver Partners
+          partners:
+            - name: Codete
+              link: https://codete.com/
+              image: https://images.ctfassets.net/zms3oc04yx81/1WGSjp2X2P5lCFo4gdgO0M/6256f77b7cdf5d638384f687776d2306/codete_logopack_logo_full_1.5x__2_.png
         - category: Media Partners
           partners:
             - name: TestJS Summit
