@@ -50,8 +50,18 @@ sections:
       name: Aleksandra Sikora
       links:
         twitter: https://twitter.com/aleksandrasays
+        github: https://github.com/beerose
       position: Open-source developer at The Guild
       description: To be announced soon
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Life of an application in Node.js
+      name: Qiuyi Zhang(Joyee)
+      links:
+        twitter: https://twitter.com/JoyeeCheung
+      position: Software engineer at Igalia
+      about: Joyee works on the compilers team at Igalia. She is a member of the Node.js technical steering committee and a V8 committer. These days she works on startup snapshot and memory management in Node.js as well as embedder API improvements in V8.
+      description: In this talk, we will take a deep dive into the life cycle of an application in Node.js - how Node.js bootstraps itself, how it compiles and runs the application, how modules get loaded, how the event loop works, and more.
 
     - image: https://images.ctfassets.net/zms3oc04yx81/1B5ZdhF2FzaN7GL2pLdYHR/d9dceb72adcc991b4cb0fbf564aed8d3/12274573_955044314532714_4871784561574834557_n__2_.jpg
       title: Workshop. Client side security 101
