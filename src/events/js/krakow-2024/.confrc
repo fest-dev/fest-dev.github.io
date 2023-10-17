@@ -69,6 +69,18 @@ sections:
       position: Head of Node.js department in Namecheap
       description: Today security becomes more and more hot topic on the market. It is not enough to say I covered top 10 OWASP vulnerabilities. On the workshop I would like to demonstrate vector of common attacks and provide a suggestions how to mitigate them. Let’s build secure web together.
 
+    - image: https://images.ctfassets.net/zms3oc04yx81/6Sxk20grqVdZQiewKsjcdZ/66fafe23d636baf8ab3cddc22c8a27d2/profile-pic-blue-nf.png
+      name: Marco Ippolito
+      position: Senior Developer Experience Engineer at NearForm | Node.js core member
+      links:
+        twitter: https://twitter.com/satanacchio/
+        linkedin: https://www.linkedin.com/in/marcoippolito2021/
+        github: https://github.com/marco-ippolito/
+        website: https://marcoippolito.dev
+      title: Top Ten Security Vulnerabilities in Node.js
+      about: Currently serving as a maintainer of Node.js, Fastify and Mercurius and member of Node.js security team, I'm a developer with years of experience in designing, developing and testing high scalability and distributed cloud applications, I'm committed to contributing to open source projects and helping the Node.js community grow. 
+      description: You will learn about the most common security vulnerabilities in node.js and see how you can fix them with real life code examples. I'm going to bring my experience as Node.js core collaborator and member of the security working group, and we will go through some of the vulnerabilities that have been fixed in the past. The goal of this session is to spread security best practices and spread awareness about some of the most common security vulnerabilities such as ssrf, csrf, injections, malicious json etc.
+
     venue:
       name: Q Hotel Plus
       address: Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland
