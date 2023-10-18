@@ -82,7 +82,7 @@ sections:
           tags:
             - AI
             - DX
-          description: For the last few years, we\'ve seen a variety of tools based on AI which provides code suggestions for developers, generates assets, improves the build process, and more. Let\'s dive into AI basics, understand how developer AI tools work under the hood, how it helps speed up the development process today and try to predict how it will evolve.
+          description: For the last few years, we've seen a variety of tools based on AI which provides code suggestions for developers, generates assets, improves the build process, and more. Let's dive into AI basics, understand how developer AI tools work under the hood, how it helps speed up the development process today and try to predict how it will evolve.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/5Rd4kt7t16gcfYFlwUF504/4d93c4ac299fda365d7612a6421843cb/E015GUGD2V6-U0222SR2F5X-23734187698c-512.jpg
           title: From Figma to fullstack React App with minimal programming
@@ -112,7 +112,7 @@ sections:
             - 3D
             - Front-End
             - React
-          description: 3D in the web sounds like something you would only do if you really want to win a website of the year award but I am here to tell you it\s actually not as hard as it seems and maybe it can be fun? Let\'s take a journey and bring 3D to the web
+          description: 3D in the web sounds like something you would only do if you really want to win a website of the year award but I am here to tell you it's actually not as hard as it seems and maybe it can be fun? Let's take a journey and bring 3D to the web
 
         - image: https://images.ctfassets.net/zms3oc04yx81/2LVn32jiUshc8AClXYnCpt/57733fef93d9988785fb5ce425ed17d0/IMG_6850_crop_not_compressed.jpg
           title: Security in Web - Unbvious parts
