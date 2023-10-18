@@ -54,7 +54,7 @@ sections:
       position: Open-source developer at The Guild
       description: To be announced soon
 
-    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+    - image: https://avatars.githubusercontent.com/u/4299420
       title: Life of an application in Node.js
       name: Qiuyi Zhang(Joyee)
       links:
@@ -71,7 +71,7 @@ sections:
 
     - image: https://images.ctfassets.net/zms3oc04yx81/6Sxk20grqVdZQiewKsjcdZ/66fafe23d636baf8ab3cddc22c8a27d2/profile-pic-blue-nf.png
       name: Marco Ippolito
-      position: Senior Developer Experience Engineer at NearForm | Node.js core member
+      position: Senior at NearForm | Node.js core member
       links:
         twitter: https://twitter.com/satanacchio/
         linkedin: https://www.linkedin.com/in/marcoippolito2021/
