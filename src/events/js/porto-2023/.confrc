@@ -73,7 +73,7 @@ sections:
             - Remix
             - React
             - Full-stack
-          description: React and the JavaScript ecosystem seems to be constantly changing. Wherever we look, there are new libraries and frameworks. These new tools always lead to learning concepts that are often non-transferable knowledge. What if I told you that by learning standard web APIs, relearning the web, and getting a bunch of transferable knowledge, you can also start using a fantastic new addition to the React and JavaScript ecosystem: Remix!
+          description: "React and the JavaScript ecosystem seems to be constantly changing. Wherever we look, there are new libraries and frameworks. These new tools always lead to learning concepts that are often non-transferable knowledge. What if I told you that by learning standard web APIs, relearning the web, and getting a bunch of transferable knowledge, you can also start using a fantastic new addition to the React and JavaScript ecosystem: Remix!"
 
         - image: https://images.ctfassets.net/zms3oc04yx81/1N0HllV8kissDXdazrvvqi/2e1e7d61903eb6c2c3c9653c6ca5a75a/IMG_8180.jpg
           title: AI for Developers – assistant or potential threat?
@@ -124,7 +124,7 @@ sections:
           description: Security is a rabbit hole that might consume all of your time, and after that there still might be issues. In this discussion we delve into the less explored methods of fortifying your website against common vulnerabilities. Those methods might work as additional layer of security in case if some vulnerable code reaches production. Don't miss this opportunity to learn about the latest and greatest methods for keeping your website safe and secure.
 
         - image: https://images.ctfassets.net/zms3oc04yx81/5hn8ThziX6lNDMdcxu9OYr/11f58f3590aced64694c9e90cc6bccf6/Portrait-Marcelo-Sousa-square-2kwide.jpg
-          title: Fluid pull requests: a new way to safely change code faster!
+          title: 'Fluid pull requests: a new way to safely change code faster!'
           name: Marcelo Sousa
           position: Ceo at Reviewpad
           tags:
