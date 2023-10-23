@@ -43,7 +43,7 @@ sections:
       position: Frontend engineer in Peerigon
       title: Animation in Engineering World
       about: Tech traveler, coffee connoisseur and Google power user
-      description: A human-centered-solutions enthusiast, I’ll be your host at Fest.Dev. I am currently working with design system at Namecheap, navigating through what makes a product unique and consistent.
+      description: A human-centered-solutions enthusiast, I'll be your host at Fest.Dev. I am currently working with design system at Namecheap, navigating through what makes a product unique and consistent.
 
     - image: /images/aleksandra-sikora.jpg
       title: To be announced soon
@@ -67,7 +67,7 @@ sections:
       title: Workshop. Client side security 101
       name: Artem Zakharchenko
       position: Head of Node.js department in Namecheap
-      description: Today security becomes more and more hot topic on the market. It is not enough to say I covered top 10 OWASP vulnerabilities. On the workshop I would like to demonstrate vector of common attacks and provide a suggestions how to mitigate them. Let’s build secure web together.
+      description: Today security becomes more and more hot topic on the market. It is not enough to say I covered top 10 OWASP vulnerabilities. On the workshop I would like to demonstrate vector of common attacks and provide a suggestions how to mitigate them. Let's build secure web together.
 
     - image: https://images.ctfassets.net/zms3oc04yx81/6Sxk20grqVdZQiewKsjcdZ/66fafe23d636baf8ab3cddc22c8a27d2/profile-pic-blue-nf.png
       name: Marco Ippolito
@@ -81,10 +81,31 @@ sections:
       about: Currently serving as a maintainer of Node.js, Fastify and Mercurius and member of Node.js security team, I'm a developer with years of experience in designing, developing and testing high scalability and distributed cloud applications, I'm committed to contributing to open source projects and helping the Node.js community grow. 
       description: You will learn about the most common security vulnerabilities in node.js and see how you can fix them with real life code examples. I'm going to bring my experience as Node.js core collaborator and member of the security working group, and we will go through some of the vulnerabilities that have been fixed in the past. The goal of this session is to spread security best practices and spread awareness about some of the most common security vulnerabilities such as ssrf, csrf, injections, malicious json etc.
 
+    - image: https://images.ctfassets.net/zms3oc04yx81/m72ARaVSrnwIlBzyxETlv/6aca1a0fdeb94d75cdc5724b612828b6/karol-cmyk9x9__1_.jpg
+      name: Karol Przystalski
+      position: CTO & Co-Founder at Codete Global
+      links:
+        twitter: https://twitter.com/kprzystalski
+        linkedin: https://www.linkedin.com/in/karolprzystalski/
+        github: https://github.com/kprzystalski
+      title: JavaScript beats cancer 
+      about: Obtained a Ph.D. degree in Computer Science in 2015 at the Jagiellonian University in Cracow. CTO and founder of Codete. Leading and mentoring teams at Codete. Working with Fortune 500 companies on data science projects. Built a research lab for machine learning methods and big data solutions at Codete. Gives speeches and trainings in data science with a focus on applied machine learning in German, Polish, and English. Used to be an O'Reilly trainer. 
+      description: Skin cancer is a serious problem worldwide but luckily treatment in the early stage can lead to recovery. JavaScript together with a machine learning model can help Medical Doctors increase the accuracy in melanoma detection. During the presentation, we show how to use Tensorflow.js, Keras and React Native to build a solution that can recognize skin moles and detect if they are melanoma or a benign mole. We also show issues that we have faced during development. As a summary, we present the pros and cons of JavaScript used for machine learning projects.
+  
+    - image: https://images.ctfassets.net/zms3oc04yx81/getSMmcj711YtQXQYi6Xc/a66797a300db7b4235dc93036f11a19a/0f05-400o400o2-MDraEgybZdxLRc5BJA7GZq.jpeg
+      name: Alexander Günsche
+      position: Senior Solutions Architect at Amazon (AWS)
+      links:
+        linkedin: https://www.linkedin.com/in/alexander-guensche/
+        github: https://github.com/lxg
+      title: Interface Contracts in Microfrontend Architectures
+      about: Alex is a Senior Solutions Architect at AWS with 20 years of IT experience in expert and leadership roles. He is a strong advocate of agile and DevOps practices, and he enjoys seeing serverless, cloud-native and event-driven architectures deployed at scale. He has delivered large transformation projects and successfully developed own and customers' businesses. He loves penguins.
+      description: Microfrontends are a popular approach to building distributed web architectures, and there's no shortage of frameworks and strategies. But these common approaches require all-in commitment to specific frameworks, which makes a smooth migration of legacy platforms very difficult. In this talk, we will take a look at a frameworkless approach based on native browser technology such as custom elements and the CustomEvent API, and we will learn how this can be used to gradually modernise a legacy web application. We will still use advanced tools for building and delivering our solutions, but we avoid any shared runtime dependencies, which allows for maximum portability of our components. In addition, we will see how we can ensure encapsulation, testability and evolvability through clearly defined interface contracts. As infrastructure, we can use containers or serverless cloud technology, deployed via CI/CD and Infrastructure as Code.
+
     venue:
       name: Q Hotel Plus
       address: Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland
-      description: Centrally Located Krakow Hotel with Scenic Views of Wawel Castle – Your Conference Venue
+      description: Centrally Located Krakow Hotel with Scenic Views of Wawel Castle - Your Conference Venue
       placeId: ChIJBzI1fG9bFkcRXiXSeizNM0U
 
     partners:
