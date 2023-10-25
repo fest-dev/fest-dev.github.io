@@ -35,7 +35,51 @@ sections:
          A full-day technical conference in Porto, set to take place in April 2024, all about Web Technologies. Stay tuned for more details to be released in the coming months. Don't miss out on this opportunity to expand your knowledge and connect with industry leaders in the field of Web Technologies. Get ready to gain valuable insights, forge meaningful connections, and take your expertise to the next level.
 
     speakers:
-      length: 0
+    - image: https://images.ctfassets.net/zms3oc04yx81/4EgSTujT2ln4o8KMLLMOpM/808b2c53cd4b036034a1deae06ea1d95/6C44C893-0E4C-4AA3-B822-6B304132D39C.JPG
+      title: Master of Ceremony
+      name: Giovanni Moschini
+      position: Namecheap.com
+      about: A human-centered-solutions enthusiast, I’ll be your host at Fest.Dev. I am currently working with design system at Namecheap, navigating through what makes a product unique and consistent.
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Soon on the website, it will be. An announcement, we shall make.
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Coming soon to the site, bite my shiny metal a...nnouncement!
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Wubba Lubba Dub Dub! Stay tuned, it's going to get schwifty on the website soon.
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Timey-wimey website updates coming your way, folks!
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Beaming to the site shortly, something out of this world!
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Elementary, my dear friends. An announcement is afoot!
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Get ready to go back in time to find out what's coming soon!
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: I'll be back... with exciting updates on the website!
 
     partners:
       description: Here will be the coolest Partners that are making this festival possible.
