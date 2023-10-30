@@ -5,14 +5,17 @@
 
 title: "Fest.dev: Porto 2024 | Conference for Software Developers and Javascript Engineers"
 description: Frontend Development Festival Porto 2024. Conference for Frontend Developers and Software Engineers
-date: April 2024
+date: June 2024
 location: Porto, Portugal
+status: Preparing
 
 links:
   linkedin: https://www.linkedin.com/company/fest-dev/
   twitter: https://twitter.com/devfestconf
   instagram: https://www.instagram.com/fest.dev/
   facebook: https://www.facebook.com/devfestconf
+  cfp: https://forms.gle/bTk8ftjdTEYQeTvk7
+  discountLink: https://forms.gle/AjvJfyhJ5tg6aYnt5
 
 theme:
   backgrounds:
