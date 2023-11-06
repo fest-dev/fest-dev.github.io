@@ -76,8 +76,8 @@ sections:
        city: Kharkiv
        country: Ukraine
        attendies: 1000
-       date: 2018-17-09
-       link: https://kharkivjs.org/
+       date: 2018-07-10
+       link: https://kharkivjs.org/index-2018.html
        image: /images/Kharkiv.svg
 
     -  extension: JS
