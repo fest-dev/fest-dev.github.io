@@ -66,7 +66,7 @@ sections:
       color: "#00C1D5"
       city: Kharkiv
       country: Ukraine
-      attendies: 1000
+      attendies: 1200
       date: 2019-10-09
       link: https://kharkivjs.org/
       image: /images/Kharkiv.svg
@@ -75,8 +75,8 @@ sections:
        color: "#00C1D5"
        city: Kharkiv
        country: Ukraine
-       attendies: 1000
-       date: 2018-07-10
+       attendies: 980
+       date: 2018-10-07
        link: https://kharkivjs.org/index-2018.html
        image: /images/Kharkiv.svg
 
@@ -84,7 +84,7 @@ sections:
        color: "#00C1D5"
        city: Kharkiv
        country: Ukraine
-       attendies: 1000
+       attendies: 970
        date: 2017-21-09
        link: https://kharkivjs.org/
        image: /images/Kharkiv.svg
