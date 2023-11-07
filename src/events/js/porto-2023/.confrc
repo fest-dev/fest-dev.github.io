@@ -36,9 +36,22 @@ sections:
          A full-day technical conference in Porto, set to take place in April 2023, all about Web Technologies. Stay tuned for more details to be released in the coming months. Don't miss out on this opportunity to expand your knowledge and connect with industry leaders in the field of Web Technologies. Get ready to gain valuable insights, forge meaningful connections, and take your expertise to the next level.
 
     photos:
-      - /images/photo_2.jpg
-      - /images/photo_3.jpg
-      - /images/photo_1.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/7sZH8DxCkaV9fgydUMQBvy/d561ed22ccc9bbb5bbda459cd703121c/Fest_dev_Porto23__1_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/3GEmE2He9SN68anRogncln/9a45eee0b988fee814ea96b93a748c2f/Fest_dev_Porto23__2_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/1q6rBndRsvb0E3Mp8I1a8l/02004b3a24b058881009914980141f64/Fest_dev_Porto23__3_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/2GU9X2zwpEUk0MsgFNMWUn/e270d765844f379856665254471c5c78/Fest_dev_Porto23__4_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/2xSBVOLyPxawGGmvccCb3d/c7a1338f6e835f570190cee560813760/Fest_dev_Porto23__5_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/5gj5LncnHq7dus54xn9E31/a0197414d1f10f3df6d0ba300e8a9ed8/Fest_dev_Porto23__6_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/4WBaOYYYhtLuzE1HLPrGsS/3cfab9eeea6b6ccaeb895d85b33bde8a/Fest_dev_Porto23__7_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/2igbKNTLSgpVSLganDx0Wt/2d8aa0d793efe7c755a15ea21d83439d/Fest_dev_Porto23__8_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/1xipFCHIrH0oVbrtsnQ0Xh/727264de2f05bef4b4a679d18ecb9546/Fest_dev_Porto23__9_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/2GNzJ2NVySBfqrTCKfzlPz/50c42c3549dfa67459958ca0af217169/Fest_dev_Porto23__10_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/6CJoYvOhx4Vx1sqLhKwzRu/9d0b86775a16f7005641026ec49312ed/Fest_dev_Porto23__11_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/3uCBJtJZZjifn0gxhaNLRV/4406a9744d64fe8e555967a521459144/Fest_dev_Porto23__12_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/6qDw5bTriQdIcvEFa38Ngs/1b5445e6fd713e416bc1a6c67259377c/Fest_dev_Porto23__13_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/cIimMQRtKFmueu7CNpSMj/4b2dbb9f590e9cd32e0d342af18a531e/Fest_dev_Porto23__16_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/3WWbaxGsTXq2FPjBkdWrfW/32add311626d069595031797859433a7/Fest_dev_Porto23__14_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/NR8iIvltmMyu50Mpg5I6Z/d4cfb5b050a207ff1cfa4406ac085351/Fest_dev_Porto23__15_.jpg
 
     speakers:
         - image: https://images.ctfassets.net/zms3oc04yx81/4EgSTujT2ln4o8KMLLMOpM/808b2c53cd4b036034a1deae06ea1d95/6C44C893-0E4C-4AA3-B822-6B304132D39C.JPG
