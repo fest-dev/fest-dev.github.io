@@ -48,9 +48,9 @@ sections:
       - https://images.ctfassets.net/zms3oc04yx81/6CJoYvOhx4Vx1sqLhKwzRu/9d0b86775a16f7005641026ec49312ed/Fest_dev_Porto23__11_.jpg
       - https://images.ctfassets.net/zms3oc04yx81/3uCBJtJZZjifn0gxhaNLRV/4406a9744d64fe8e555967a521459144/Fest_dev_Porto23__12_.jpg
       - https://images.ctfassets.net/zms3oc04yx81/6qDw5bTriQdIcvEFa38Ngs/1b5445e6fd713e416bc1a6c67259377c/Fest_dev_Porto23__13_.jpg
-      - /images/photo_2.jpg
-      - /images/photo_3.jpg
-      - /images/photo_1.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/cIimMQRtKFmueu7CNpSMj/4b2dbb9f590e9cd32e0d342af18a531e/Fest_dev_Porto23__16_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/3WWbaxGsTXq2FPjBkdWrfW/32add311626d069595031797859433a7/Fest_dev_Porto23__14_.jpg
+      - https://images.ctfassets.net/zms3oc04yx81/NR8iIvltmMyu50Mpg5I6Z/d4cfb5b050a207ff1cfa4406ac085351/Fest_dev_Porto23__15_.jpg
 
     speakers:
         - image: https://images.ctfassets.net/zms3oc04yx81/4EgSTujT2ln4o8KMLLMOpM/808b2c53cd4b036034a1deae06ea1d95/6C44C893-0E4C-4AA3-B822-6B304132D39C.JPG
