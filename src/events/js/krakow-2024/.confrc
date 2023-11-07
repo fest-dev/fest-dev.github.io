@@ -109,6 +109,21 @@ sections:
       about: Alex is a Senior Solutions Architect at AWS with 20 years of IT experience in expert and leadership roles. He is a strong advocate of agile and DevOps practices, and he enjoys seeing serverless, cloud-native and event-driven architectures deployed at scale. He has delivered large transformation projects and successfully developed own and customers' businesses. He loves penguins.
       description: Microfrontends are a popular approach to building distributed web architectures, and there's no shortage of frameworks and strategies. But these common approaches require all-in commitment to specific frameworks, which makes a smooth migration of legacy platforms very difficult. In this talk, we will take a look at a frameworkless approach based on native browser technology such as custom elements and the CustomEvent API, and we will learn how this can be used to gradually modernise a legacy web application. We will still use advanced tools for building and delivering our solutions, but we avoid any shared runtime dependencies, which allows for maximum portability of our components. In addition, we will see how we can ensure encapsulation, testability and evolvability through clearly defined interface contracts. As infrastructure, we can use containers or serverless cloud technology, deployed via CI/CD and Infrastructure as Code.
 
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Will be announced soon
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Will be announced soon
+
+    - image: https://images.ctfassets.net/zms3oc04yx81/FnSmqSnjthYQWsh52gq8I/47877f548a6364f825564a600ba5a377/Default_pfp.svg
+      title: Will be announced soon
+      name: Stay tuned
+      description: Will be announced soon
+
     venue:
       name: Q Hotel Plus
       address: Q Hotel Plus Kraków, Wygrana 6, 30-311 Kraków, Poland
