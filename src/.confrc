@@ -36,24 +36,6 @@ sections:
 
   conferences:
     - extension: JS
-      color: "#D904A0"
-      city: Krakow
-      country: Poland
-      attendies: 300
-      date: 2024-03-22
-      link: /events/js/krakow-2024
-      image: /images/Krakow.svg
-
-    - extension: JS
-      color: "#9305F2"
-      city: Porto
-      country: Portugal
-      attendies: 250
-      date: 2024-06-05
-      link: /events/js/porto-2024
-      image: /images/Porto.svg
-
-    - extension: JS
       color: "#9305F2"
       city: Porto
       country: Portugal
