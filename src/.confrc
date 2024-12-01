@@ -94,6 +94,9 @@ sections:
     categories:
       - category: Platinum
         partners:
+          - name: Devs.com.pt
+            link: https://devs.com.pt
+            image: https://devs.com.pt/logo.svg
           - name: Mindera
             link: https://mindera.com/
             image: https://images.ctfassets.net/zms3oc04yx81/1JhPlYgGAhiRHy4Oryrlpw/b5397a9b0e1e398024546ceac5b727ec/Mindera.png
